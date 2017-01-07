@@ -1,0 +1,80 @@
+.invisible{font-size: 0em;position: fixed;}
+/*MENU PRINCIPAL*/
+.logo-cidtrix{width: 90px;height: 25px;}
+.menu-principal-lista{
+    font-size: 1.8rem;
+}
+.menu-principal-lista li > a{
+    color: #fff !important;
+}
+.menu-principal-lista li:hover > a, .menu-principal-lista li:hover{
+    background-color: #fff;
+    color: #000 !important;
+    transition: ease-in-out 0.5s;
+}
+/*PRIMEIRA DOBRA*/
+.main_cabecalho{
+    background-image: url(../img/main_cabecalho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.main_cabecalho article{
+    margin-top: 55vh;
+    line-height: 1;
+    transform: translateY(-45%);
+}
+.main_cabecalho_titulo, .main_cabecalho_subtitulo{
+    text-align: center;
+    color: #fff;
+}
+.main_cabecalho_titulo mark{
+    background-color: #fb0b0b;
+    color: #fff;
+}
+.main_cabecalho_subtitulo mark{
+    background: none;
+    color: #03fb5b;
+}
+.main_cabecalho_titulo > h1{
+    margin: 10px 10px !important;
+    font-size: 5.6rem;
+}
+.main_cabecalho_subtitulo{
+    margin-top: 20px;
+    font-size: 5.6rem;
+}
+@media (max-width: 767px){
+    .main_cabecalho_titulo > h1, .main_cabecalho_subtitulo > p{
+        font-size: 2.24rem;
+    }
+}
+@media (min-width: 768px){
+    .main_cabecalho_titulo > h1, .main_cabecalho_subtitulo > p{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 992px){
+    .main_cabecalho_titulo > h1, .main_cabecalho_subtitulo > p{
+        font-size: 4.8rem;
+    }
+}
+@media (min-width: 1200px){
+    .main_cabecalho_titulo > h1, .main_cabecalho_subtitulo > p{
+        font-size: 5.6rem;
+    }
+}
+
+/*SOLUÇÕES*/
+.main_solucoes{
+    margin-top: 25px;
+}
+.main_solucoes_header{
+    margin-bottom: 20px;
+}
+.main_solucoes_titulo{
+    font-weight: bolder;
+}
+.main_solucoes_subtitulo{
+    font-size: 2rem;
+}
