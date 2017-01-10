@@ -33,7 +33,7 @@ require './_app/Config.inc.php';
         <!--FIM 1º DOBRA-->
 
         <!--MENU PRINCIPAL-->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top main_menu">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#menu">
@@ -78,8 +78,8 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>CRIAÇÃO DE WEBSITES</h4>
                             <hr>
-                            <p class="text-left">
-                                Tenha seu site institucional ou loja virtual que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita nesse vasto mundo da internet, e que necessita passar credibilidade, confiança e autoridade para as pessoas que o buscam.
+                            <p class="text-justify">
+                                Tenha seu site institucional ou loja virtual que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita nesse vasto mundo da internet, e que necessita passar credibilidade, confiança e autoridade.
                             </p>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>OTIMIZAÇÃO DE SITES - SEO</h4>
                             <hr>
-                            <p class="text-left">
+                            <p class="text-justify">
                                 Nossa consultoria em SEO irá potencializar e melhorar seu posicionamento(rankeamento) do seu site em sites de busca, como o Google. Afinal, lembre-se: Quem não é visto, não é lembrado!
                             </p>
                         </div>
@@ -110,7 +110,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>MARKETING DIGITAL</h4>
                             <hr>
-                            <p class="text-left">
+                            <p class="text-justify">
                                 Em todos os projetos desenvolvidos pela Cidtrix, buscamos sempre criar e manter um relacionamento íntegro e leal. Desta formaa, cada etapa é estudada e orgaanizada para que de fato possamos visualizar e entregar resultados aos nossos clientes.
                             </p>
                         </div>
@@ -125,7 +125,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>CONSULTORIA EM VENDAS DIGITAIS</h4>
                             <hr>
-                            <p class="text-left">
+                            <p class="text-justify">
                                 Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados para trazer mais resultados para sua empresa neste mundo digital.
                             </p>
                         </div>
@@ -136,14 +136,14 @@ require './_app/Config.inc.php';
         <!--FIM SOLUÇÕES - 2º DOBRA-->
 
         <!--ORÇAMENTO - 3º DOBRA-->
-        <section class="container">
+        <section class="container-fluid main_contato1">
             <h1 class="invisible">Faça um Orçamento Online e sem Compromisso</h1>
-            <div>
-                <aside>
-                    <h1>Entre em Contato</h1>
+            <div class="row">
+                <aside class="col-xs-3 col-sm-5 col-md-4 col-lg-3 contato1-txt1">
+                    <h2 class="text-center">Entre em Contato</h2>
                 </aside>
-                <aside>
-                    <h1>Faça um Orçamento Online</h1>
+                <aside class="col-xs-6 col-sm-6 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-3 contato1-txt2">
+                    <h2 class="text-center">Faça um Orçamento Online</h2>
                 </aside>
             </div>
         </section>
