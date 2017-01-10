@@ -150,71 +150,102 @@ require './_app/Config.inc.php';
         <!--FIM ORÇAMENTO - 3º DOBRA-->
 
         <!--SOBRE NÓS - 4º DOBRA-->
-        <section class="container">
-            <h1>SOBRE NÓS</h1>
-            <p class="tagline">
-                A Cidtrix é uma empresa voltada para atender o mercado web como um todo.<br>
-                Especializada em marketing digital, e na criação de websites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
+        <section class="container main_sobre">
+            <h1 class="text-center">SOBRE NÓS</h1>
+            <p class="tagline text-center">
+                A Cidtrix é uma Empresa voltada para atender o Mercado Web como um todo.<br>
+                Especializada em Marketing Digital, e na Criação de Websites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
             </p>
         </section>
         <!--FIM SOBRE NÓS - 4º DOBRA-->
 
         <!--WEBSITES - 5º DOBRA-->
-        <section class="container">
-            <div>
-                <h1>WEBSITES</h1>
-                <article>
-                    <img src="img/pontualidade.png" alt="Pontualidade">
-                    <h2>Pontualidade</h2>
-                </article>
-                <article>
-                    <img src="img/responsivo.png" alt="Responsivo">
-                    <h2>Responsivo</h2>
-                </article>
-                <article>
-                    <img src="img/seguranca.png" alt="Segurança">
-                    <h2>Segurança</h2>
-                </article>
+        <section class="container-fluid main_websites">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 banner banner-left"></div>
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 banner banner-title">
+                    <h1 class="text-center">WEBSITES</h1>
+                </div>
+                <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 banner banner-right"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, ex et dolor urna, urna tortor vivamus congue ut mauris enim.Luctus aliquam.
-                Turpis faucibus sed, elit condimentum amet sagittis integer tortor donec, vel dignissim amet velit sagittis blandit,
-                tempor eget, sed velit accumsan nam donec velit. Amet mus blandit rhoncus pede adipiscing praesent.</p>
-            <p>Lorem ipsum dolor sit amet, ex et dolor urna, urna tortor vivamus congue ut mauris enim.Luctus aliquam.
-                Turpis faucibus sed, elit condimentum amet sagittis integer tortor donec, vel dignissim amet velit sagittis blandit,
-                tempor eget, sed velit accumsan nam donec velit. Amet mus blandit rhoncus pede adipiscing praesent.</p>
-            <p>Lorem ipsum dolor sit amet, ex et dolor urna, urna tortor vivamus congue ut mauris enim.Luctus aliquam.
-                Turpis faucibus sed, elit condimentum amet sagittis integer tortor donec, vel dignissim amet velit sagittis blandit,
-                tempor eget, sed velit accumsan nam donec velit. Amet mus blandit rhoncus pede adipiscing praesent.</p>
-
+            <div class="websites_img">
+                <div class="container">
+                    <div id="slideWeb">
+                        <div id="slideWebSites" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner"  align="center">
+                                <article class="item active">
+                                    <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade">
+                                    <div class="carousel-text">
+                                        <h3>PONTUALIDADE</h3>
+                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo">
+                                    <div class="carousel-text">
+                                        <h3>RESPONSIVO</h3>
+                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <img src="<?= INCLUDE_PATH; ?>/img/seguranca.png" alt="Segurança">
+                                    <div class="carousel-text">
+                                        <h3>SEGURANÇA</h3>
+                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <a class="left carousel-control" href="#slideWebSites" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#slideWebSites" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--FIM WEBSITES - 5º DOBRA-->
 
         <!--MARKETIN DIGITAL - 6º DOBRA-->
-        <section class="container">
-            <div>
-                <h1>MARKETING DIGITAL</h1>
-                <article>
-                    <img src="img/autoridade.png" alt="Autoridade">
-                    <h2>Autoridade</h2>
-                </article>
-                <article>
-                    <img src="img/monitoramento.png" alt="Monitoramento">
-                    <h2>Monitoramento</h2>
-                </article>
-                <article>
-                    <img src="img/resultados.png" alt="Resultados">
-                    <h2>Resultados</h2>
-                </article>
+        <section class="container-fluid main_marketing_digital">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 banner banner-left"></div>
+                <div class="col-xs-6 col-sm-7 col-md-4 col-lg-4 banner banner-title">
+                    <h1 class="text-center">MARKETING DIGITAL</h1>
+                </div>
+                <div class="col-xs-5 col-sm-4 col-md-7 col-lg-7 banner banner-right"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, ex et dolor urna, urna tortor vivamus congue ut mauris enim.Luctus aliquam.
-                Turpis faucibus sed, elit condimentum amet sagittis integer tortor donec, vel dignissim amet velit sagittis blandit,
-                tempor eget, sed velit accumsan nam donec velit. Amet mus blandit rhoncus pede adipiscing praesent.</p>
-            <p>Lorem ipsum dolor sit amet, ex et dolor urna, urna tortor vivamus congue ut mauris enim.Luctus aliquam.
-                Turpis faucibus sed, elit condimentum amet sagittis integer tortor donec, vel dignissim amet velit sagittis blandit,
-                tempor eget, sed velit accumsan nam donec velit. Amet mus blandit rhoncus pede adipiscing praesent.</p>
-            <p>Lorem ipsum dolor sit amet, ex et dolor urna, urna tortor vivamus congue ut mauris enim.Luctus aliquam.
-                Turpis faucibus sed, elit condimentum amet sagittis integer tortor donec, vel dignissim amet velit sagittis blandit,
-                tempor eget, sed velit accumsan nam donec velit. Amet mus blandit rhoncus pede adipiscing praesent.</p>
+            <div class="websites_img">
+                <div class="container">
+                    <div id="slideMarketing">
+                        <div id="slideMarketingDigital" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner"  align="center">
+                                <article class="item active">
+                                    <img src="<?= INCLUDE_PATH; ?>/img/autoridade.png" alt="Autoridade">
+                                    <div class="carousel-text">
+                                        <h3>AUTORIDADE</h3>
+                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.png" alt="Monitoramento">
+                                    <div class="carousel-text">
+                                        <h3>MONITORE</h3>
+                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                    </div>
+                                </article>
+                                <article class="item">
+                                    <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados">
+                                    <div class="carousel-text">
+                                        <h3>RESULTADOS</h3>
+                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <a class="left carousel-control" href="#slideMarketingDigital" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#slideMarketingDigital" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
         <!--FIM MARKETIN DIGITAL - 6º DOBRA-->
