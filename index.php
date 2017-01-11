@@ -15,6 +15,7 @@ require './_app/Config.inc.php';
 
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/style.css">
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/all-animation.css">
     </head>
 
     <body>
@@ -167,7 +168,7 @@ require './_app/Config.inc.php';
                 </div>
                 <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 banner banner-right"></div>
             </div>
-            <div class="container-fluid websites_img">
+            <div class="container websites_img">
                 <div id="slideWeb">
                     <div id="slideWebSites" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner"  align="center">
@@ -211,7 +212,7 @@ require './_app/Config.inc.php';
                 <div class="col-xs-5 col-sm-4 col-md-7 col-lg-7 banner banner-right"></div>
             </div>
             <div class="marketing_img">
-                <div class="container-fluid">
+                <div class="container">
                     <div id="slideMarketing">
                         <div id="slideMarketingDigital" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner"  align="center">
@@ -253,7 +254,7 @@ require './_app/Config.inc.php';
 
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main_contato2-txt">
                     <h1 class="text-left">Alguma Dúvida?</h1>
-                    <p class="tagline">
+                    <p class="tagline contato2-txt1">
                         Mande um <strong>e-mail</strong> diretamente para nós.
                         Esclareça Dúvidas. Mande Sugestões, Elogios.
                     </p>
@@ -294,12 +295,111 @@ require './_app/Config.inc.php';
         <!--FIM ENTRE EM CONTATO 7º DOBRA-->
 
         <!--PORTIFÓLIO-->
-        <section class="container">
-            <h1>Fique à Vontade Para Ver Nosso <strong>Portifólio</strong></h1>
-            <h3>Todos</h3>
-            <h3>WebSites</h3>
-            <h3>Marketing Digital</h3>
-            <h3>Identidade Visual</h3>
+        <section class="container main_portifolio">
+            <h1 class="text-center">
+                Fique à Vontade<br>
+                para ver nosso<br>
+                <strong>Portifólio</strong>
+            </h1>
+            <h3 class="invisible">Todos</h3>
+            <h3 class="invisible">WebSites</h3>
+            <h3 class="invisible">Marketing Digital</h3>
+            <h3 class="invisible">Identidade Visual</h3>
+
+
+
+            <button type="button" class="btn btn-default btn-portifolio active" onclick="portifolioAtual(1)">Todos</button>
+            <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(2)">Websites</button>
+            <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(3)">Marketing Digital</button>
+            <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(4)">Identidade Visual</button>
+
+            <div class="container">
+                <div class="row portifolio-item portifolio-todos enter-right-bounce" id="todos">
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                </div>
+                <div class="row portifolio-item portifolio-site enter-right-bounce" id="sites">
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
+                    </div>
+                </div>
+                <div class="row portifolio-item portifolio-marketing enter-right-bounce" id="marketing">
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
+                    </div>
+                </div>
+                <div class="row portifolio-item portifolio-identidade enter-right-bounce" id="identidade">
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </section>
         <!--FIM PORTIFÓLIO-->
         <!--ORÇAMENTO-->

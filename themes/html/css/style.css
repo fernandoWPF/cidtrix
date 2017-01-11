@@ -233,8 +233,8 @@
 .carousel-text{
     margin-top: 8px;
     padding: 4px 8px 4px 8px;
-    background-color: #ddd;
-    border-radius: 10px;
+    background-color: #ff7171;
+    color: #fff;
 }
 /*ENTRE EM CONTATO 7º DOBRA*/
 .main_contato2{
@@ -247,6 +247,9 @@
 }
 .main_contato2-form, .main_contato2-txt{
     margin-top: 30px;
+}
+.main_contato2 .form-group{
+    margin-bottom: 10px;
 }
 .main_contato2-txt{
     padding-left: 35px !important;
@@ -268,17 +271,17 @@
         height: 80vh !important;
     }
     .main_contato2-form, .main_contato2-txt{
-        margin-top: 0;
+        margin-top: 0 !important;
     }
     .main_contato2-txt h1{
         font-size: 3rem !important;
         font-weight: bolder;
     }
-    .main_contato2-txt p{
-        font-size: 1.8rem !important;
+    .contato2-txt1{
+        font-size: 1.7rem !important;
     }
-    p.contato2-txt2{
-        font-size: 2rem !important;
+    .contato2-txt2{
+        font-size: 2.1rem !important;
     }
 }
 @media(max-width: 991px){
@@ -292,10 +295,26 @@
         font-size: 3.2rem !important;
         font-weight: bolder;
     }
-    .main_contato2-txt p{
+    .contato2-txt1{
         font-size: 2rem !important;
     }
-    p.contato2-txt2{
+    contato2-txt2{
         font-size: 2.2rem !important;
     }
+}
+
+/*PORTIFÓLIO*/
+.main_portifolio{
+    margin-top: 30px;
+}
+.portifolio-identidade, .portifolio-todos, .portifolio-marketing, .portifolio-site{
+    margin-top: 15px;
+    border: 1px solid #eee;
+    display: none;
+}
+.btn-portifolio:active{
+    border: none !important;
+}
+.btn-portifolio{
+    margin: 4px;
 }
