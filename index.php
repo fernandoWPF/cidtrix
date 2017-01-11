@@ -148,7 +148,6 @@ require './_app/Config.inc.php';
             </div>
         </section>
         <!--FIM ORÇAMENTO - 3º DOBRA-->
-
         <!--SOBRE NÓS - 4º DOBRA-->
         <section class="container main_sobre">
             <h1 class="text-center">SOBRE NÓS</h1>
@@ -168,36 +167,34 @@ require './_app/Config.inc.php';
                 </div>
                 <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 banner banner-right"></div>
             </div>
-            <div class="websites_img">
-                <div class="container">
-                    <div id="slideWeb">
-                        <div id="slideWebSites" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner"  align="center">
-                                <article class="item active">
-                                    <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade">
-                                    <div class="carousel-text">
-                                        <h3>PONTUALIDADE</h3>
-                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                                    </div>
-                                </article>
-                                <article class="item">
-                                    <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo">
-                                    <div class="carousel-text">
-                                        <h3>RESPONSIVO</h3>
-                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                                    </div>
-                                </article>
-                                <article class="item">
-                                    <img src="<?= INCLUDE_PATH; ?>/img/seguranca.png" alt="Segurança">
-                                    <div class="carousel-text">
-                                        <h3>SEGURANÇA</h3>
-                                        <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <a class="left carousel-control" href="#slideWebSites" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                            <a class="right carousel-control" href="#slideWebSites" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            <div class="container-fluid websites_img">
+                <div id="slideWeb">
+                    <div id="slideWebSites" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner"  align="center">
+                            <article class="item active">
+                                <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade">
+                                <div class="carousel-text">
+                                    <h3>PONTUALIDADE</h3>
+                                    <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo">
+                                <div class="carousel-text">
+                                    <h3>RESPONSIVO</h3>
+                                    <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <img src="<?= INCLUDE_PATH; ?>/img/seguranca.png" alt="Segurança">
+                                <div class="carousel-text">
+                                    <h3>SEGURANÇA</h3>
+                                    <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
+                                </div>
+                            </article>
                         </div>
+                        <a class="left carousel-control" href="#slideWebSites" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#slideWebSites" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -213,8 +210,8 @@ require './_app/Config.inc.php';
                 </div>
                 <div class="col-xs-5 col-sm-4 col-md-7 col-lg-7 banner banner-right"></div>
             </div>
-            <div class="websites_img">
-                <div class="container">
+            <div class="marketing_img">
+                <div class="container-fluid">
                     <div id="slideMarketing">
                         <div id="slideMarketingDigital" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner"  align="center">
@@ -251,22 +248,48 @@ require './_app/Config.inc.php';
         <!--FIM MARKETIN DIGITAL - 6º DOBRA-->
 
         <!--ENTRE EM CONTATO 7º DOBRA-->
-        <section class="container">
-            <h1>Alguma Dúvida?</h1>
-            <p class="tagline">
-                Mande um Email Diretamente Para Nós.<br>
-                Esclareça Dúvidas. Mande Sugestões, Elogios.
-            </p>
-            <p class="tagline">Estamos à Sua Disposição!</p>
+        <section class="container-fluid main_contato2">
+            <div class="row">
 
-            <form>
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="tel" name="fone" placeholder="Seu Melhor Telefone">
-                <input type="text" name="assunto" placeholder="Assunto">
-                <input type="text" name="mensagem" placeholder="Sua Mensagem" required>
-                <button type="submit">Enviar</button>
-            </form>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main_contato2-txt">
+                    <h1 class="text-left">Alguma Dúvida?</h1>
+                    <p class="tagline">
+                        Mande um <strong>e-mail</strong> diretamente para nós.
+                        Esclareça Dúvidas. Mande Sugestões, Elogios.
+                    </p>
+                    <p class="tagline contato2-txt2">Estamos à Sua Disposição!</p>
+                </div>
+                <form class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main_contato2-form">
+                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-email input-group-lg">
+                            <input type="text" class="form-control" name="nome" required="required" placeholder="Seu Nome">
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-email input-group-lg">
+                            <input type="email" class="form-control" name="email" required="required" placeholder="Seu E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-email input-group-lg">
+                            <input type="tel" class="form-control" name="fone" placeholder="Seu Telefone">
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-email input-group-lg">
+                            <input type="text" class="form-control" name="assunto" required="required" placeholder="Assunto do E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg div-form-email col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <textarea class="form-control" rows="4" name="mensagem" placeholder="Digite aqui sua Mensagem..." style="resize: none"></textarea>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-email input-group-lg">
+                            <button type="submit" class=" btn btn-danger form-control">ENVIAR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
         <!--FIM ENTRE EM CONTATO 7º DOBRA-->
 
@@ -374,5 +397,6 @@ require './_app/Config.inc.php';
 
         <script src="<?= INCLUDE_PATH; ?>/js/jquery-3.1.1.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/bootstrap.min.js"></script>
+        <script src="<?= INCLUDE_PATH; ?>/js/script.js"></script>
     </body>
 </html>

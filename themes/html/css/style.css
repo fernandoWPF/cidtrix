@@ -32,7 +32,7 @@
 
 /*PRIMEIRA DOBRA*/
 .main_cabecalho{
-    background-image: url(../img/main_cabecalho.png);
+    background-image: url(../img/main-cabecalho.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -213,37 +213,89 @@
     }
 }
 @media(max-width: 767px){
-    .banner{
-        height: 60px;
-    }
-    .banner-title{
-        height: 70px;
-        margin-top: -5px;
-    }
     .banner-title h1{
         font-size: 1.4rem;
         margin-top: 30px !important;
     }
 }
 /*WEBSITES E MARKETING DIGITAL - CORPO*/
-.websites_img{
+.websites_img, .marketing_img{
     margin-top: 30px;
 }
-.websites_img .carousel-control.left, .websites_img .carousel-control.right{
+.main_marketing_digital .carousel-control.left, .main_marketing_digital .carousel-control.right,
+.main_websites .carousel-control.left, .main_websites .carousel-control.right{
     background-image: none !important;
 }
-.websites_img .carousel-control.left > span, .websites_img .carousel-control.right > span{
-    color: red !important;
+.main_marketing_digital .carousel-control.left > span, .main_marketing_digital .carousel-control.right > span,
+.main_websites .carousel-control.left > span, .main_websites .carousel-control.right > span{
+    color: #888 !important;
 }
 .carousel-text{
     margin-top: 8px;
     padding: 4px 8px 4px 8px;
-    background-color: #eee;
+    background-color: #ddd;
+    border-radius: 10px;
 }
-.item img{
-    margin-top: 15px;
+/*ENTRE EM CONTATO 7º DOBRA*/
+.main_contato2{
+    margin-top: 50px;
+    background-image: url(../img/main-contato2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
 }
-#slideWeb, #slideMarketing{
-    border: 1px solid #eee;
-    border-radius: 5px;
+.main_contato2-form, .main_contato2-txt{
+    margin-top: 30px;
+}
+.main_contato2-txt{
+    padding-left: 35px !important;
+    color: #fff;
+}
+.main_contato2-txt h1{
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.main_contato2-txt p{
+    font-size: 2.6rem;
+    font-weight: 100;
+}
+.contato2-txt2{
+    font-size: 3.8rem !important;
+}
+@media(max-width: 767px){
+    .main_contato2{
+        height: 80vh !important;
+    }
+    .main_contato2-form, .main_contato2-txt{
+        margin-top: 0;
+    }
+    .main_contato2-txt h1{
+        font-size: 3rem !important;
+        font-weight: bolder;
+    }
+    .main_contato2-txt p{
+        font-size: 1.8rem !important;
+    }
+    p.contato2-txt2{
+        font-size: 2rem !important;
+    }
+}
+@media(max-width: 991px){
+    .main_contato2{
+        height: 45vh;
+    }
+    .main_contato2-txt{
+        margin-top: 15px;
+    }
+    .main_contato2-txt h1{
+        font-size: 3.2rem !important;
+        font-weight: bolder;
+    }
+    .main_contato2-txt p{
+        font-size: 2rem !important;
+    }
+    p.contato2-txt2{
+        font-size: 2.2rem !important;
+    }
 }
