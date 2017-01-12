@@ -244,15 +244,13 @@ require './_app/Config.inc.php';
                     </div>
                 </div>
             </div>
-
         </section>
         <!--FIM MARKETIN DIGITAL - 6º DOBRA-->
 
         <!--ENTRE EM CONTATO 7º DOBRA-->
         <section class="container-fluid main_contato2">
             <div class="row">
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main_contato2-txt">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main_contato2-txt">
                     <h1 class="text-left">Alguma Dúvida?</h1>
                     <p class="tagline contato2-txt1">
                         Mande um <strong>e-mail</strong> diretamente para nós.
@@ -260,36 +258,9 @@ require './_app/Config.inc.php';
                     </p>
                     <p class="tagline contato2-txt2">Estamos à Sua Disposição!</p>
                 </div>
-                <form class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main_contato2-form">
-                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-email input-group-lg">
-                            <input type="text" class="form-control" name="nome" required="required" placeholder="Seu Nome">
-                        </div>
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-email input-group-lg">
-                            <input type="email" class="form-control" name="email" required="required" placeholder="Seu E-mail">
-                        </div>
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-email input-group-lg">
-                            <input type="tel" class="form-control" name="fone" placeholder="Seu Telefone">
-                        </div>
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-email input-group-lg">
-                            <input type="text" class="form-control" name="assunto" required="required" placeholder="Assunto do E-mail">
-                        </div>
-                    </div>
-                    <div class="form-group form-group-lg div-form-email col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <textarea class="form-control" rows="4" name="mensagem" placeholder="Digite aqui sua Mensagem..." style="resize: none"></textarea>
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="form-email input-group-lg">
-                            <button type="submit" class=" btn btn-danger form-control">ENVIAR</button>
-                        </div>
-                    </div>
-                </form>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                    <?php require REQUIRE_PATH . '/inc/formulario-email.php'; ?>
+                </div>
             </div>
         </section>
         <!--FIM ENTRE EM CONTATO 7º DOBRA-->
@@ -301,125 +272,36 @@ require './_app/Config.inc.php';
                 para ver nosso<br>
                 <strong>Portifólio</strong>
             </h1>
-            <h3 class="invisible">Todos</h3>
-            <h3 class="invisible">WebSites</h3>
-            <h3 class="invisible">Marketing Digital</h3>
-            <h3 class="invisible">Identidade Visual</h3>
+            <div class="div-btn">
+                <button type="button" class="btn btn-default btn-portifolio active" onclick="portifolioAtual(1)">Todos</button>
+                <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(2)">Websites</button>
+                <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(3)">Marketing Digital</button>
+                <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(4)">Identidade Visual</button>
+            </div>
+            <div class="container" align="center">
+                <?php require REQUIRE_PATH . '/inc/portifolio.php'; ?>
+            </div>
+        </section>
+        <!--FIM PORTIFÓLIO-->
 
-
-
-            <button type="button" class="btn btn-default btn-portifolio active" onclick="portifolioAtual(1)">Todos</button>
-            <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(2)">Websites</button>
-            <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(3)">Marketing Digital</button>
-            <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(4)">Identidade Visual</button>
-
-            <div class="container">
-                <div class="row portifolio-item portifolio-todos enter-right-bounce" id="todos">
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
+        <!--ORÇAMENTO-->
+        <section class="container-fluid main_orcamento">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main_orcamento-txt">
+                    <h1 class="main_orcamento-txt1 text-left"><strong>Orçamento</strong></h1>
+                    <p class="tagline main_orcamento-txt2 text-left">
+                        Solite-nos um Orçamento. 
+                    </p>
+                    <p class="main_orcamento-txt3 text-left">Faça um Orçamento Conosco. Tire suas Dúvidas e Veja como Criamos sua Autoridade através do seu <strong>WebSite</strong>,
+                        da <strong>Otimização SEO</strong>, <strong>Gestão de Links Patrocinados</strong>, <strong>Gestão de Redes Sociais</strong>,
+                        <strong>Consultoria em Vendas Digitais</strong>, entre outros Serviços.
+                    </p>
                 </div>
-                <div class="row portifolio-item portifolio-site enter-right-bounce" id="sites">
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo"> 
-                    </div>
-                </div>
-                <div class="row portifolio-item portifolio-marketing enter-right-bounce" id="marketing">
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade"> 
-                    </div>
-                </div>
-                <div class="row portifolio-item portifolio-identidade enter-right-bounce" id="identidade">
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados"> 
-                    </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                    <?php require REQUIRE_PATH . '/inc/formulario-email.php'; ?>
                 </div>
             </div>
 
-
-
-
-
-        </section>
-        <!--FIM PORTIFÓLIO-->
-        <!--ORÇAMENTO-->
-        <section class="container">
-            <h1><strong>Orçamento</strong></h1>
-            <p class="tagline">
-                Solite-nos um Orçamento. 
-            </p>
-            <p>Faça um Orçamento Conosco. Tire suas Dúvidas e Veja como Criamos sua Autoridade através do seu <mark>WebSite</mark>,
-                da <mark>Otimização SEO</mark>, <mark>Gestão de Links Patrocinados</mark>, <mark>Gestão de Redes Sociais</mark>,
-                <mark>Consultoria em Vendas Digitais</mark>, entre outros Serviços.</p>
-
-            <form>
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="tel" name="fone" placeholder="Seu Melhor Telefone">
-                <input type="text" name="assunto" placeholder="Assunto">
-                <input type="text" name="mensagem" placeholder="Sua Mensagem" required>
-                <button type="submit">Enviar</button>
-            </form>
         </section>
         <!--FIM ORÇAMENTO-->
 

@@ -1,3 +1,28 @@
+/*
+ ==================
+     ANIMATION
+ ==================
+*/
+.portifolio-animation{
+    transform-origin:0 50%;
+    animation-name: portifolio-animation ;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes portifolio-animation{
+    from{
+        opacity:.3;
+        transform:translateX(100%) rotateY(180deg);
+    }
+}
+/*
+ ==================
+     ANIMATION
+ ==================
+*/
+
+
+
 .invisible{font-size: 0em;position: fixed;}
 /*MENU PRINCIPAL*/
 .logo-cidtrix{width: 90px;height: 25px;}
@@ -10,7 +35,7 @@
     margin-bottom: 0 !important;
     font-size: 1.8rem;
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
     .menu-principal-lista{
         background-color: rgba(2,2,2,1) !important;
     }
@@ -245,7 +270,7 @@
     background-position: center;
     height: 80vh;
 }
-.main_contato2-form, .main_contato2-txt{
+.main_contato-form, .main_contato2-txt{
     margin-top: 30px;
 }
 .main_contato2 .form-group{
@@ -268,9 +293,9 @@
 }
 @media(max-width: 767px){
     .main_contato2{
-        height: 80vh !important;
+        height: 90vh !important;
     }
-    .main_contato2-form, .main_contato2-txt{
+    .main_contato-form, .main_contato2-txt{
         margin-top: 0 !important;
     }
     .main_contato2-txt h1{
@@ -282,18 +307,21 @@
     }
     .contato2-txt2{
         font-size: 2.1rem !important;
+        line-height: 1;
     }
 }
-@media(max-width: 991px){
+@media(min-width: 768px){
     .main_contato2{
-        height: 45vh;
+        height: 35vh;
     }
     .main_contato2-txt{
         margin-top: 15px;
+        text-align: center !important;
     }
     .main_contato2-txt h1{
         font-size: 3.2rem !important;
         font-weight: bolder;
+        text-align: center !important;
     }
     .contato2-txt1{
         font-size: 2rem !important;
@@ -309,7 +337,6 @@
 }
 .portifolio-identidade, .portifolio-todos, .portifolio-marketing, .portifolio-site{
     margin-top: 15px;
-    border: 1px solid #eee;
     display: none;
 }
 .btn-portifolio:active{
@@ -317,4 +344,98 @@
 }
 .btn-portifolio{
     margin: 4px;
+    outline: none !important;
+}
+.portifolio-item{
+    text-align: center;
+}
+.portifolio-group img{
+    padding: 10px !important;
+}
+@media(min-width:992px){
+    .div-btn{
+        padding-left: 18px;
+    }
+}
+/*ORÇAMENTO*/
+.main_orcamento{
+    margin-top: 50px;
+    background-image: url(../img/main-orcamento.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.main_orcamento > div{
+    margin-top: 35px;
+}
+.main_orcamento-txt1{
+    margin-bottom: 0;
+    font-size: 6rem;
+}
+.main_orcamento-txt2{
+    font-size: 3rem;
+    line-height: 1;
+}
+.main_orcamento-txt3{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.main_orcamento-txt{
+    padding-left: 50px !important;
+    color: #000;
+}
+@media(max-width: 767px){
+    .main_orcamento{
+        height: 105vh;
+    }
+    .main_orcamento-txt{
+        padding-left: 15px !important;
+    }
+    .main_orcamento-txt1, .main_orcamento-txt2, .main_orcamento-txt3{
+        text-align: center !important;
+    }
+    .main_orcamento > div{
+        margin-top: 5px;
+    }
+    .main_orcamento-txt1{
+        margin: 0;
+        font-size: 4rem;
+    }
+    .main_orcamento-txt2{
+        font-size: 2rem;
+    }
+    .main_orcamento-txt3{
+        padding-left: 0;
+        font-size: 1.7rem;
+        margin-top: 15px;
+        line-height: 1.2;
+    }
+}
+@media(min-width: 768px){
+    .main_orcamento{
+        height: 40vh;
+    }
+    .main_orcamento-txt{
+        padding-left: 15px !important;
+    }
+    .main_orcamento-txt1, .main_orcamento-txt2, .main_orcamento-txt3{
+        text-align: center !important;
+    }
+    .main_orcamento > div{
+        margin-top: 5px;
+    }
+    .main_orcamento-txt1{
+        margin: 0;
+        font-size: 4rem;
+    }
+    .main_orcamento-txt2{
+        font-size: 2rem;
+    }
+    .main_orcamento-txt3{
+        padding-left: 0;
+        font-size: 1.7rem;
+        margin-top: 15px;
+        line-height: 1.2;
+    }
 }

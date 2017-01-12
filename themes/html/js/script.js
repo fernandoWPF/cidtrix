@@ -1,10 +1,35 @@
+/*
+ * ================================
+ * TRECHO PARA MOSTRAR O PORTIFÓLIO
+ * ================================
+ */
+
 var portifolioIndex = 1;
 function portifolioAtual(index) {
     showPortifolio(portifolioIndex = index);
 }
+function showPortifolio() {
+    var i;
+    var divs = document.getElementsByClassName("portifolio-group");
+    var btns = document.getElementsByClassName("btn-portifolio");
+    for (i = 0; i < divs.length; i++) {
+        divs[i].style.display = "none";
+    }
+    for (i = 0; i < btns.length; i++) {
+        btns[i].className = btns[i].className.replace(" active", "");
+    }
+    divs[portifolioIndex - 1].style.display = "block";
+    btns[portifolioIndex - 1].className += " active";
+}
 
 $(document).ready(inputs(), showPortifolio(portifolioIndex));
 
+/*
+ * ================================
+ * TRECHO PARA AJUSTAR O TAMANHO DO
+ * FORMULÁRIO DE CONTATO
+ * ================================
+ */
 $(window).bind("resize", function () {
     inputs();
 });
@@ -28,16 +53,3 @@ function inputs() {
     }
 }
 ;
-function showPortifolio() {
-    var i;
-    var divs = document.getElementsByClassName("portifolio-item");
-    var btns = document.getElementsByClassName("btn-portifolio");
-    for (i = 0; i < divs.length; i++) {
-        divs[i].style.display = "none";
-    }
-    for (i = 0; i < btns.length; i++) {
-        btns[i].className = btns[i].className.replace(" active", "");
-    }
-    divs[portifolioIndex - 1].style.display = "block";
-    btns[portifolioIndex - 1].className += " active";
-}
