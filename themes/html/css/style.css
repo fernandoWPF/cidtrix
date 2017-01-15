@@ -163,7 +163,7 @@
 }
 @media(max-width: 767px){
     .main_contato1 h2{
-        font-size: 3.3rem !important;
+        font-size: 2.7rem !important;
     }
 }
 .contato1-txt1{
@@ -293,7 +293,7 @@
 }
 @media(max-width: 767px){
     .main_contato2{
-        height: 90vh !important;
+        height: 100vh !important;
     }
     .main_contato-form, .main_contato2-txt{
         margin-top: 0 !important;
@@ -310,9 +310,9 @@
         line-height: 1;
     }
 }
-@media(min-width: 768px){
+@media(min-width: 768px) and (max-width: 991px){
     .main_contato2{
-        height: 35vh;
+        height: 75vh;
     }
     .main_contato2-txt{
         margin-top: 15px;
@@ -387,7 +387,7 @@
 }
 @media(max-width: 767px){
     .main_orcamento{
-        height: 105vh;
+        height: 110vh;
     }
     .main_orcamento-txt{
         padding-left: 15px !important;
@@ -412,9 +412,9 @@
         line-height: 1.2;
     }
 }
-@media(min-width: 768px){
+@media(min-width: 768px) and (max-width: 991px){
     .main_orcamento{
-        height: 40vh;
+        height: 60vh;
     }
     .main_orcamento-txt{
         padding-left: 15px !important;
@@ -438,4 +438,98 @@
         margin-top: 15px;
         line-height: 1.2;
     }
+}
+
+.main_contato3{
+    margin-top: 30px;
+}
+.main_contato3 h1{
+    margin-bottom: 130px;
+    color: #000;
+    font-size: 6rem;
+}
+.main_contato3 article{
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+    background-color: #ffbdbd;
+    text-align: center;
+}
+.main_contato3 article > img{
+    margin-top: -85px;
+    display: inline-block;
+}
+@media(max-width: 767px){
+    .main_contato3{
+        margin-top: 10px;
+    }
+    .main_contato3 h1{
+        color: #000;
+        font-size: 2.8rem;
+    }
+}
+@media(max-width: 991px){
+    .main_contato3 article{
+        margin-bottom: 110px;
+    }
+}
+
+/*REDES SOCIAIS*/
+.main_redesociais{
+    margin-top: 50px;
+    background-color: #ff3a5f;
+    height: 18vh;
+}
+.main_redesociais img{
+    margin: 15px 15px;
+}
+.main_redesociais span{
+    color: #fff;
+    font-size: 3.5rem;
+}
+.main_redesociais a:hover, .main_redesociais a:visited{
+    text-decoration: none;
+}
+@media(max-width: 767px){
+    .main_redesociais{
+        height: 13vh;
+    }
+    .main_redesociais article{
+        padding: 0;
+    }
+    .main_redesociais img{
+        height: 55px;
+        width: 50px;
+    }
+    .main_redesociais span{
+        font-size: 1.15rem;
+    }
+}
+@media(max-width: 991px){
+    .main_redesociais{
+        margin-top: 0;
+    }
+}
+
+/*FOOTER*/
+.main_footer{
+    background-color: #a00b0b;
+    color: #fff;
+}
+.main_footer-contato{
+    margin-top: 150px;
+    border-bottom: 2px solid #fff;
+}
+.main_footer-contato article{
+    padding-bottom: 60px;
+}
+.footer-contato-meio{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.main_footer-contato img{
+    display: inline-block;
+}
+.footer-menu{
+    display: inline-block;
+    margin: 40px 40px;
 }

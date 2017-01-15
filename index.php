@@ -11,7 +11,7 @@ require './_app/Config.inc.php';
         <meta name="robots" content="index, follow"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title><?= $pg_title; ?></title>
-        <link rel="shortcut icon" href="img/favicon.png" />
+        <link rel="shortcut icon" href="<?= INCLUDE_PATH; ?>/img/favicon.png" />
 
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/style.css">
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/bootstrap.min.css">
@@ -250,7 +250,7 @@ require './_app/Config.inc.php';
         <!--ENTRE EM CONTATO 7º DOBRA-->
         <section class="container-fluid main_contato2">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main_contato2-txt">
+                <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 main_contato2-txt">
                     <h1 class="text-left">Alguma Dúvida?</h1>
                     <p class="tagline contato2-txt1">
                         Mande um <strong>e-mail</strong> diretamente para nós.
@@ -258,7 +258,7 @@ require './_app/Config.inc.php';
                     </p>
                     <p class="tagline contato2-txt2">Estamos à Sua Disposição!</p>
                 </div>
-                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
                     <?php require REQUIRE_PATH . '/inc/formulario-email.php'; ?>
                 </div>
             </div>
@@ -278,7 +278,7 @@ require './_app/Config.inc.php';
                 <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(3)">Marketing Digital</button>
                 <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(4)">Identidade Visual</button>
             </div>
-            <div class="container" align="center">
+            <div class="container">
                 <?php require REQUIRE_PATH . '/inc/portifolio.php'; ?>
             </div>
         </section>
@@ -287,7 +287,7 @@ require './_app/Config.inc.php';
         <!--ORÇAMENTO-->
         <section class="container-fluid main_orcamento">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main_orcamento-txt">
+                <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 main_orcamento-txt">
                     <h1 class="main_orcamento-txt1 text-left"><strong>Orçamento</strong></h1>
                     <p class="tagline main_orcamento-txt2 text-left">
                         Solite-nos um Orçamento. 
@@ -297,84 +297,102 @@ require './_app/Config.inc.php';
                         <strong>Consultoria em Vendas Digitais</strong>, entre outros Serviços.
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
                     <?php require REQUIRE_PATH . '/inc/formulario-email.php'; ?>
                 </div>
             </div>
-
         </section>
         <!--FIM ORÇAMENTO-->
 
         <!--ENTRE EM CONTATO-->
-        <section class="container">
-            <h1><strong>Entre em Contato</strong> Com a CidTrix</h1>
-
-            <article>
-                <h3>Nosso Endereço</h3>
-            </article>
-            <article>
-                <h3>Telefone</h3>
-            </article>
-            <article>
-                <h3>Envie-nos um Email</h3>
-                <p class="tagline">contato@cidtrix.com.br</p>
-            </article>
+        <section class="container main_contato3">
+            <div class="row ">
+                <div class="col-xs-10 col-sm-10 col-md-6 col-lg-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3 col-lg-offset-3">
+                    <h1 class="text-center"><strong>Entre em contato</strong> com a Cidtrix</h1>
+                </div>
+            </div>
+            <div class="row">
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="<?= INCLUDE_PATH; ?>/img/endereco.png" alt="Endereço" class="img-responsive">
+                    <h3><strong>Nosso Endereço</strong></h3>
+                    <p class=" tagline">Rua da Santa Ceia, 159-B</p>
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="<?= INCLUDE_PATH; ?>/img/telefone.png" alt="Telefone" class="img-responsive">
+                    <h3><strong>Telefone</strong></h3>
+                    <p class="tagline">44 98852-7951</p>
+                </article>
+                <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="<?= INCLUDE_PATH; ?>/img/email.png" alt="Email" class="img-responsive">
+                    <h3><strong>Envie-nos um Email</strong></h3>
+                    <p class="tagline">contato@cidtrix.com.br</p>
+                </article>
+            </div>
         </section>
         <!--ENTRE EM CONTATO-->
 
         <!--REDES SOCIAIS DA CIDTRIX-->
-        <section class="container">
+        <section class="container-fluid main_redesociais">
             <h1 class="invisible">A Cidtrix Nas Redes Sociais</h1>
-            <article>
-                <h3 class="invisible">Curta Nossa Página No Facebook</h3>
-                <img src="img/Facebook.png" alt="Curta Nossa Página No Facebook">
-                <span>Compartilhe</span>
-            </article>
-            <article>
-                <h3 class="invisible">Siga-nos no Twitter</h3>
-                <img src="img/Twitter.png" alt="Siga-nos no Twitter">
-                <span>Siga</span>
-            </article>
-            <article>
-                <h3 class="invisible">Siga-nos no Instagram</h3>
-                <img src="img/Instagram.png" alt="Siga-nos no Instagram">
-            </article>
+            <div class="row text-center">
+                <article class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 text-center">
+                    <h3 class="invisible">Curta Nossa Página No Facebook</h3>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="<?= INCLUDE_PATH; ?>/img/Facebook.png" alt="Curta Nossa Página No Facebook">
+                        <span>Compartilhe</span>
+                    </a>
+                </article>
+                <article class="col-xs-6 col-sm-6 col-md-4 col-lg-4 text-center">
+                    <h3 class="invisible">Siga-nos no Twitter</h3>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="<?= INCLUDE_PATH; ?>/img/Twitter.png" alt="Siga-nos no Twitter">
+                        <span>Siga</span>
+                    </a>
+                </article>
+            </div>
         </section>
         <!--FIM REDES SOCIAIS DA CIDTRIX-->
 
         <!--FOOTER COM CONTATO DA CIDTRIX-->
-        <footer class="container">
-            <section>
-                <h1 class="invisible">Entre Em Contato Conosco</h1>
-                <article>
-                    <h3>MARINGÁ - PR</h3>
-                    <p class="tagline">44 | 9888-0151</p>
-                </article>
-                <article>
-                    <h3>ATENDIMENTO AO CLIENTE</h3>
-                    <p class="tagline">VÍDEO CONFERÊNCIA</p>
-                    <a href="#">Clique Aqui</a>
-                </article>
-                <article>
-                    <h3>ATENDIMENTO AO CLIENTE</h3>
-                    <p class="tagline">contato@cidtrix.com.br</p>
-                    <a href="#">Clique Aqui</a>
-                </article>
+        <footer class="container-fluid main_footer">
+            <h1 class="invisible">Entre Em Contato Conosco</h1>
+            <div class="container main_footer-contato">
+                <div class="row text-center">
+                    <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/endereco-footer.png" alt="Endereço" class="img-responsive">
+                        <h5>MARINGÁ - PR</h5>
+                        <p class=" tagline">Rua da Santa Ceia, 159-B</p>
+                    </article>
+                    <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-contato-meio">
+                        <img src="<?= INCLUDE_PATH; ?>/img/fone-footer.png" alt="Telefone" class="img-responsive">
+                        <h5>ATENDIMENTO AO CLIENTE</h5>
+                        <p class="tagline">44 98852-7951</p>
+                    </article>
+                    <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="<?= INCLUDE_PATH; ?>/img/email-footer.png" alt="Email" class="img-responsive">
+                        <h5>ATENDIMENTO AO CLIENTE</h5>
+                        <p class="tagline">contato@cidtrix.com.br</p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <nav class="col-md-12 footer-menu">
+                        <h2 class="invisible">Mais Sobre a CidTrix - Agência de Marketing Digital</h2>
+                        <ul class="nav navbar-nav navbar-default text-center">
+                            <li><a href="">Início</a></li>
+                            <li><a href="">Soluções</a></li>
+                            <li><a href="">Portifólio</a></li>
+                            <li><a href="">Solicite seu Projeto</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-                <nav>
-                    <h2 class="invisible">Mais Sobre a CidTrix - Agência de Marketing Digital</h2>
-                    <ul class="nav navbar-nav">
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Soluções</a></li>
-                        <li><a href="">Portifólio</a></li>
-                        <li><a href="">Solicite seu Projeto</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </nav>
-                <div class="clearfix"></div>
-                <p>&copy; <?= date('Y'); ?> - COPYRIGHT CIDTRIX, TODOS OS DIREITOS RESERVADOS.</p>
 
-            </section>
+            <div class="clearfix"></div>
+            <p class="text-center">&copy; <?= date('Y'); ?> - COPYRIGHT CIDTRIX, TODOS OS DIREITOS RESERVADOS.</p>
         </footer>
 
         <script src="<?= INCLUDE_PATH; ?>/js/jquery-3.1.1.min.js"></script>
