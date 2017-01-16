@@ -15,7 +15,6 @@ require './_app/Config.inc.php';
 
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/style.css">
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/bootstrap.min.css">
-        <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/all-animation.css">
     </head>
 
     <body>
@@ -377,20 +376,18 @@ require './_app/Config.inc.php';
             </div>
             <div class="container">
                 <div class="row">
-                    <nav class="col-md-12 footer-menu">
+                    <nav class=" col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 footer-menu text-center">
                         <h2 class="invisible">Mais Sobre a CidTrix - Agência de Marketing Digital</h2>
-                        <ul class="nav navbar-nav navbar-default text-center">
+                        <ul class="nav navbar navbar-nav">
                             <li><a href="">Início</a></li>
                             <li><a href="">Soluções</a></li>
                             <li><a href="">Portifólio</a></li>
-                            <li><a href="">Solicite seu Projeto</a></li>
+                            <li><a href=""><strong>Solicite seu Projeto</strong></a></li>
                             <li><a href="">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
-
-
             <div class="clearfix"></div>
             <p class="text-center">&copy; <?= date('Y'); ?> - COPYRIGHT CIDTRIX, TODOS OS DIREITOS RESERVADOS.</p>
         </footer>

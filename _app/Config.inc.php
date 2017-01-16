@@ -1,6 +1,6 @@
 <?php
 
-define('HOME', 'http://10.24.50.21/cidtrix');
+define('HOME', 'http://192.168.137.1/cidtrix');
 define('THEME', 'html');
 
 define('INCLUDE_PATH', HOME . '/themes/' . THEME);

@@ -3,13 +3,47 @@
      ANIMATION
  ==================
 */
-.portifolio-animation{
-    transform-origin:0 50%;
-    animation-name: portifolio-animation ;
+.portifolio-animation {
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-animation-name: portifolio-animation;
+    -moz-animation-name: portifolio-animation;
+    -ms-animation-name: portifolio-animation;
+    -o-animation-name: portifolio-animation;
+    animation-name: portifolio-animation;
+    -webkit-animation-duration: 1.3s;
+    -moz-animation-duration: 1.3s;
+    -ms-animation-duration: 1.3s;
+    -o-animation-duration: 1.3s;
     animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
 }
-@keyframes portifolio-animation{
+@-webkit-keyframes portifolio-animation{
+    from{
+        opacity:.3;
+        transform:translateX(100%) rotateY(180deg);
+    }
+}
+@-o-keyframes portifolio-animation{
+    from{
+        opacity:.3;
+        transform:translateX(100%) rotateY(180deg);
+    }
+}
+@-ms-keyframes portifolio-animation{
+    from{
+        opacity:.3;
+        transform:translateX(100%) rotateY(180deg);
+    }
+}
+@-moz-keyframes portifolio-animation{
     from{
         opacity:.3;
         transform:translateX(100%) rotateY(180deg);
@@ -21,71 +55,109 @@
  ==================
 */
 
-
-
-.invisible{font-size: 0em;position: fixed;}
+.invisible {
+    font-size: 0em;
+    position: fixed;
+}
 /*MENU PRINCIPAL*/
-.logo-cidtrix{width: 90px;height: 25px;}
-.main_menu{
+
+.logo-cidtrix {
+    width: 90px;
+    height: 25px;
+}
+.main_menu {
     background-color: rgba(2,2,2,0.7) !important;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    -ms-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    -o-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
     box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
 }
-.menu-principal-lista{
+
+.menu-principal-lista {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     font-size: 1.8rem;
+}
+
+.menu-principal-lista li > a {
+    color: #fff !important;
+}
+
+.menu-principal-lista li:hover > a,
+.menu-principal-lista li:hover {
+    background-color: rgba(255,255,255,0.88);
+    color: #000 !important;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
 }
 @media(max-width: 767px){
     .menu-principal-lista{
         background-color: rgba(2,2,2,1) !important;
     }
 }
-.menu-principal-lista li > a{
-    color: #fff !important;
-}
+
 @media(max-width: 991px){
     .menu-principal-lista li{
         border-bottom: 1px solid #000;
         border-top: 1px solid #3c3c3c;
     }
 }
-.menu-principal-lista li:hover > a, .menu-principal-lista li:hover{
-    background-color: rgba(255,255,255,0.88);
-    color: #000 !important;
-    transition: ease-in-out 0.5s;
-}
+
 
 /*PRIMEIRA DOBRA*/
-.main_cabecalho{
+.main_cabecalho {
     background-image: url(../img/main-cabecalho.png);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
-.main_cabecalho article{
+
+.main_cabecalho article {
     margin-top: 55vh;
     line-height: 1;
+    -webkit-transform: translateY(-45%);
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    -o-transform: translateY(-45%);
     transform: translateY(-45%);
 }
-.main_cabecalho_titulo, .main_cabecalho_subtitulo{
+
+.main_cabecalho_titulo,
+.main_cabecalho_subtitulo {
     text-align: center;
     color: #fff;
 }
-.main_cabecalho_titulo mark{
+
+.main_cabecalho_titulo mark {
     background-color: #fb0b0b;
     color: #fff;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
     border-radius: 5px !important;
 }
-.main_cabecalho_subtitulo mark{
+
+.main_cabecalho_subtitulo mark {
     background: none;
     color: #03fb5b;
 }
-.main_cabecalho_titulo > h1{
+
+.main_cabecalho_titulo > h1 {
     margin: 10px 10px !important;
     font-size: 5.6rem;
 }
-.main_cabecalho_subtitulo{
+
+.main_cabecalho_subtitulo {
     margin-top: 20px;
     font-size: 5.6rem;
 }
@@ -116,64 +188,95 @@
         height: 250px;
     }
 }
-.main_solucoes{
+.main_solucoes {
     margin-top: 25px;
 }
-.main_solucoes_header{
+
+.main_solucoes_header {
     margin-bottom: 20px;
 }
-.main_solucoes_titulo{
+
+.main_solucoes_titulo {
     font-weight: bolder;
 }
-.main_solucoes_subtitulo{
+
+.main_solucoes_subtitulo {
     font-size: 2rem;
 }
-.main_solucoes img{
+
+.main_solucoes img {
     padding: 15px;
 }
-.main_solucoes article:hover{
+
+.main_solucoes article:hover {
     background: #eee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     border-radius: 5px;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
     cursor: pointer;
 }
-.main_solucoes article:hover hr{
+
+.main_solucoes article:hover hr {
     border-top-color: #fff !important;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
 }
 
 /*ENTRE EM CONTATO*/
-.main_contato1{
+.main_contato1 {
     margin-top: 30px;
     background-image: url(../img/main-contato1.png);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center;
     height: 70vh;
 }
-.main_contato1 aside{
+
+.main_contato1 aside {
     margin-top: 30vh;
     line-height: 1;
     font-weight: lighter;
     color: #f3d6d6;
+    -webkit-transform: translateY(-45%);
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    -o-transform: translateY(-45%);
     transform: translateY(-45%);
 }
-.main_contato1 h2{
+
+.main_contato1 h2 {
     font-size: 6rem !important;
+}
+
+.contato1-txt1 {
+    padding-left: 10px;
+    float: left !important;
+}
+
+.contato1-txt2 {
+    padding-right: 10px;
+    float: right !important;
 }
 @media(max-width: 767px){
     .main_contato1 h2{
         font-size: 2.7rem !important;
     }
 }
-.contato1-txt1{
-    padding-left: 10px;
-    float: left !important;
-}
-.contato1-txt2{
-    padding-right: 10px;
-    float: right !important;
-}
+
 
 /*SOBRE NÓS*/
 .main_sobre{
@@ -262,33 +365,44 @@
     color: #fff;
 }
 /*ENTRE EM CONTATO 7º DOBRA*/
-.main_contato2{
+.main_contato2 {
     margin-top: 50px;
     background-image: url(../img/main-contato2.png);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center;
     height: 80vh;
 }
-.main_contato-form, .main_contato2-txt{
+
+.main_contato-form,
+.main_contato2-txt {
     margin-top: 30px;
 }
-.main_contato2 .form-group{
+
+.main_contato2 .form-group {
     margin-bottom: 10px;
 }
-.main_contato2-txt{
+
+.main_contato2-txt {
     padding-left: 35px !important;
     color: #fff;
 }
-.main_contato2-txt h1{
+
+.main_contato2-txt h1 {
     font-size: 6rem;
     font-weight: bolder;
 }
-.main_contato2-txt p{
+
+.main_contato2-txt p {
     font-size: 2.6rem;
     font-weight: 100;
 }
-.contato2-txt2{
+
+.contato2-txt2 {
     font-size: 3.8rem !important;
 }
 @media(max-width: 767px){
@@ -358,30 +472,39 @@
     }
 }
 /*ORÇAMENTO*/
-.main_orcamento{
+.main_orcamento {
     margin-top: 50px;
     background-image: url(../img/main-orcamento.png);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center;
     height: 80vh;
 }
-.main_orcamento > div{
+
+.main_orcamento > div {
     margin-top: 35px;
 }
-.main_orcamento-txt1{
+
+.main_orcamento-txt1 {
     margin-bottom: 0;
     font-size: 6rem;
 }
-.main_orcamento-txt2{
+
+.main_orcamento-txt2 {
     font-size: 3rem;
     line-height: 1;
 }
-.main_orcamento-txt3{
+
+.main_orcamento-txt3 {
     font-size: 2rem;
     margin-top: 30px;
 }
-.main_orcamento-txt{
+
+.main_orcamento-txt {
     padding-left: 50px !important;
     color: #000;
 }
@@ -474,19 +597,27 @@
 }
 
 /*REDES SOCIAIS*/
-.main_redesociais{
+.main_redesociais {
     margin-top: 50px;
     background-color: #ff3a5f;
     height: 18vh;
 }
-.main_redesociais img{
+
+.main_redesociais img {
     margin: 15px 15px;
 }
-.main_redesociais span{
+
+.main_redesociais span {
     color: #fff;
     font-size: 3.5rem;
 }
-.main_redesociais a:hover, .main_redesociais a:visited{
+
+.main_redesociais a:hover,
+.main_redesociais a:visited {
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
     text-decoration: none;
 }
 @media(max-width: 767px){
@@ -530,6 +661,28 @@
     display: inline-block;
 }
 .footer-menu{
-    display: inline-block;
     margin: 40px 40px;
+}
+.footer-menu a{
+    color: #fff;
+}
+.footer-menu li:hover,
+.footer-menu li:hover > a {
+    background-color: rgba(255,255,255,0.88);
+    color: #000 !important;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+}
+@media(max-width: 992px){
+    .footer-contato-meio{
+        border-left: none;
+        border-right: none;
+    }
+    .main_footer-contato{
+        margin-top: 50px;
+        border-bottom: none;
+    }
 }
