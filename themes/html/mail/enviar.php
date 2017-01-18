@@ -1,13 +1,16 @@
 <?php
-
+//criando um filtro
 $GetPost = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
 include_once 'class.smtp.php';
 include_once 'class.phpmailer.php';
+
 date_default_timezone_set('America/Sao_Paulo');
 $Mailer = new PHPMailer;
 $Mailer->Charset = 'UTF-8';
 $Mailer->IsSMTP();
 $Mailer->isHTML(true);
+
 // Configurações do SMTP
 $Mailer->SMTPAuth = true;
 $Mailer->SMTPSecure = 'tls';
@@ -18,7 +21,7 @@ $Mailer->Password = '$ig3db@dm1n';
 
 // E-Mail do remetente (deve ser o mesmo de quem fez a autenticação
 // nesse caso seu_login@gmail.com)
-$Mailer->From = 'fernando.wesleypf@gmail.com';
+$Mailer->From = $Mailer->Username;
 
 // Nome do remetente
 $Mailer->FromName = (utf8_decode($GetPost['nome']));
@@ -41,25 +44,19 @@ $Mailer->AltBody .= ' FONE: ' . (utf8_decode($GetPost['fone']));
 $Mailer->AltBody .= ' ASSUNTO: ' . (utf8_decode($GetPost['assunto']));
 $Mailer->AltBody .= ' MENSAGEM: ' . (utf8_decode($GetPost['msg']));
 
+
 // adiciona destinatário (pode ser chamado inúmeras vezes)
 $Mailer->AddAddress('fernando.wesleypf@gmail.com');
-//$Mailer->AddBcc($_POST['email']);adciona uma cópia
+
+//adciona uma cópia
+//$Mailer->AddBcc($_POST['email']);
+//
 // adiciona um anexo
 //$Mailer->AddAttachment('arquivo.pdf');
-// verifica se enviou corretamente
 
 if ($Mailer->Send()) {
-    echo 'Foi ';
-
-//    echo '
-//    <script>
-//        window.location.href = "index.php";
-//        $(".main_contato-form").submit(function (event) {
-//    event.preventDefault();
-//});
-//        $("#myModal").modal("show");
-//    </script>
-//';
+    echo 'Obrigado pelo Contato ' .utf8_decode($GetPost['nome']) . '!';
 } else {
-    echo 'Erro do PHPMailer: ' . $Mailer->ErrorInfo;
+    echo 'Houve um erro ao enviar o e-mail:   '
+    . $Mailer->ErrorInfo;
 }

@@ -19,7 +19,7 @@ require './_app/Config.inc.php';
 
     <body>
         <!--1º DOBRA-->
-        <header class="container-fluid main_cabecalho">
+        <header class="container-fluid main_cabecalho" id="inicio">
             <h1 class="invisible"><?= $pg_title; ?></h1>
             <article class="row">
                 <div class="col-xs-8 col-sm-6 col-md-6 col-lg-4 col-xs-offset-2 col-sm-offset-3 col-md-offset-3 col-lg-offset-4 main_cabecalho_titulo">
@@ -48,11 +48,11 @@ require './_app/Config.inc.php';
 
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav navbar-right menu-principal-lista">
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Soluções</a></li>
-                        <li><a href="">Portifólio</a></li>
-                        <li><a href="">Solicite seu Projeto</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#solucoes">Soluções</a></li>
+                        <li><a href="#portifolio">Portifólio</a></li>
+                        <li><a href="#solicite-projeto">Solicite seu Projeto</a></li>
+                        <li><a href="#contato1">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +60,7 @@ require './_app/Config.inc.php';
         <!--FIM MENU PRINCIPAL-->
 
         <!--SOLUÇÕES - 2º DOBRA-->
-        <section class="container main_solucoes">
+        <section class="container main_solucoes" id="solucoes">
             <div class="row main_solucoes_header">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h1 class="text-center main_solucoes_titulo">SOLUÇÕES</h1>
@@ -265,7 +265,7 @@ require './_app/Config.inc.php';
         <!--FIM ENTRE EM CONTATO 7º DOBRA-->
 
         <!--PORTIFÓLIO-->
-        <section class="container main_portifolio">
+        <section class="container main_portifolio" id="portifolio">
             <h1 class="text-center">
                 Fique à Vontade<br>
                 para ver nosso<br>
@@ -284,7 +284,7 @@ require './_app/Config.inc.php';
         <!--FIM PORTIFÓLIO-->
 
         <!--ORÇAMENTO-->
-        <section class="container-fluid main_orcamento">
+        <section class="container-fluid main_orcamento" id="solicite-projeto">
             <div class="row">
                 <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 main_orcamento-txt">
                     <h1 class="main_orcamento-txt1 text-left"><strong>Orçamento</strong></h1>
@@ -304,7 +304,7 @@ require './_app/Config.inc.php';
         <!--FIM ORÇAMENTO-->
 
         <!--ENTRE EM CONTATO-->
-        <section class="container main_contato3">
+        <section class="container main_contato3" id="contato1">
             <div class="row ">
                 <div class="col-xs-10 col-sm-10 col-md-6 col-lg-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3 col-lg-offset-3">
                     <h1 class="text-center"><strong>Entre em contato</strong> com a Cidtrix</h1>
@@ -381,11 +381,11 @@ require './_app/Config.inc.php';
                     <nav class=" col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 footer-menu text-center">
                         <h2 class="invisible">Mais Sobre a CidTrix - Agência de Marketing Digital</h2>
                         <ul class="nav navbar navbar-nav">
-                            <li><a href="">Início</a></li>
-                            <li><a href="">Soluções</a></li>
-                            <li><a href="">Portifólio</a></li>
-                            <li><a href=""><strong>Solicite seu Projeto</strong></a></li>
-                            <li><a href="">Contato</a></li>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#solucoes">Soluções</a></li>
+                            <li><a href="#portifolio">Portifólio</a></li>
+                            <li><a href="#solicite-projeto"><strong>Solicite seu Projeto</strong></a></li>
+                            <li><a href="#contato1">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -393,7 +393,25 @@ require './_app/Config.inc.php';
             <div class="clearfix"></div>
             <p class="text-center">&copy; <?= date('Y'); ?> - COPYRIGHT CIDTRIX, TODOS OS DIREITOS RESERVADOS.</p>
         </footer>
-        
+        <div class="container">
+            <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span id="titulo-modal" class="h2 text-center modal-title"></span>
+                        </div>
+                        <div class="modal-body modal-retorno-email">
+                            <p id="retorno-email" class="h4 text-center"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+
         <script src="<?= INCLUDE_PATH; ?>/js/jquery-3.1.1.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/bootstrap.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/script.js"></script>
