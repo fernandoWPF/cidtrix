@@ -352,6 +352,8 @@ require './_app/Config.inc.php';
         </section>
         <!--FIM REDES SOCIAIS DA CIDTRIX-->
 
+        <div id="msg"></div>
+
         <!--FOOTER COM CONTATO DA CIDTRIX-->
         <footer class="container-fluid main_footer">
             <h1 class="invisible">Entre Em Contato Conosco</h1>
@@ -391,9 +393,10 @@ require './_app/Config.inc.php';
             <div class="clearfix"></div>
             <p class="text-center">&copy; <?= date('Y'); ?> - COPYRIGHT CIDTRIX, TODOS OS DIREITOS RESERVADOS.</p>
         </footer>
-
+        
         <script src="<?= INCLUDE_PATH; ?>/js/jquery-3.1.1.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/bootstrap.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/script.js"></script>
+        <script src="<?= INCLUDE_PATH; ?>/js/mail.js"></script>
     </body>
 </html>

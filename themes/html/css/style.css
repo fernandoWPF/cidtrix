@@ -407,7 +407,7 @@
 }
 @media(max-width: 767px){
     .main_contato2{
-        height: 100vh !important;
+        height: 120vh !important;
     }
     .main_contato-form, .main_contato2-txt{
         margin-top: 0 !important;
@@ -510,7 +510,7 @@
 }
 @media(max-width: 767px){
     .main_orcamento{
-        height: 110vh;
+        height: 145vh;
     }
     .main_orcamento-txt{
         padding-left: 15px !important;
