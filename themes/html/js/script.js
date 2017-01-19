@@ -22,7 +22,7 @@ function showPortifolio() {
     btns[portifolioIndex - 1].className += " active";
 }
 
-$(document).ready(inputs(), showPortifolio(portifolioIndex));
+$(document).ready(inputs(), showPortifolio(portifolioIndex), scrollSuave());
 
 /*
  * ================================
@@ -53,3 +53,22 @@ function inputs() {
     }
 }
 ;
+/*
+ * ================================
+ * TRECHO PARA DAR UM SCROLL SUAVE
+ * ================================
+ */
+function scrollSuave() {
+    var $doc = $('html, body');
+    $('a').click(function () {
+        $doc.animate({
+           scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1700);
+        return false;
+    });
+};
+/*
+ * ================================
+ * TRECHO PARA DAR UM SCROLL SUAVE
+ * ================================
+ */

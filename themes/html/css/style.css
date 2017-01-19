@@ -399,7 +399,7 @@
 
 .main_contato2-txt p {
     font-size: 2.6rem;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 .contato2-txt2 {
@@ -685,4 +685,8 @@
         margin-top: 50px;
         border-bottom: none;
     }
+}
+
+p#retorno-email{
+    line-height: 2 !important;
 }

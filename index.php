@@ -12,7 +12,9 @@ require './_app/Config.inc.php';
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title><?= $pg_title; ?></title>
         <link rel="shortcut icon" href="<?= INCLUDE_PATH; ?>/img/favicon.png" />
-
+        
+        
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/style.css">
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/bootstrap.min.css">
     </head>
@@ -78,7 +80,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>CRIAÇÃO DE WEBSITES</h4>
                             <hr>
-                            <p class="text-justify">
+                            <p class="text-center">
                                 Tenha seu site institucional ou loja virtual que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita nesse vasto mundo da internet, e que necessita passar credibilidade, confiança e autoridade.
                             </p>
                         </div>
@@ -93,7 +95,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>OTIMIZAÇÃO DE SITES - SEO</h4>
                             <hr>
-                            <p class="text-justify">
+                            <p class="text-center">
                                 Nossa consultoria em SEO irá potencializar e melhorar seu posicionamento(rankeamento) do seu site em sites de busca, como o Google. Afinal, lembre-se: Quem não é visto, não é lembrado!
                             </p>
                         </div>
@@ -110,7 +112,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>MARKETING DIGITAL</h4>
                             <hr>
-                            <p class="text-justify">
+                            <p class="text-center">
                                 Em todos os projetos desenvolvidos pela Cidtrix, buscamos sempre criar e manter um relacionamento íntegro e leal. Desta formaa, cada etapa é estudada e orgaanizada para que de fato possamos visualizar e entregar resultados aos nossos clientes.
                             </p>
                         </div>
@@ -125,7 +127,7 @@ require './_app/Config.inc.php';
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
                             <h4>CONSULTORIA EM VENDAS DIGITAIS</h4>
                             <hr>
-                            <p class="text-justify">
+                            <p class="text-center">
                                 Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados para trazer mais resultados para sua empresa neste mundo digital.
                             </p>
                         </div>
@@ -398,23 +400,26 @@ require './_app/Config.inc.php';
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <span id="titulo-modal" class="h2 text-center modal-title"></span>
+                            <button type="button" class="close disabled" disabled="disabled" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span id="titulo-modal" class="h3 text-center modal-title">Enviando seu E-mail...</span>
                         </div>
                         <div class="modal-body modal-retorno-email">
-                            <p id="retorno-email" class="h4 text-center"></p>
+                            <p id="retorno-email" class="h4 text-center">
+                                <img src="<?= INCLUDE_PATH; ?>/img/loading.gif">
+                            </p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-danger disabled" disabled="disabled" data-dismiss="modal">Fechar</button>
                         </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="<?= INCLUDE_PATH; ?>/js/jquery-3.1.1.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/bootstrap.min.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/script.js"></script>
         <script src="<?= INCLUDE_PATH; ?>/js/mail.js"></script>
+
     </body>
 </html>

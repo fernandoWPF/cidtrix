@@ -1,16 +1,16 @@
 jQuery(document).ready(function () {
     jQuery('.main_contato-form').submit(function () {
-        $("form button").text('ENVIANDO...');
+        $("#modal").modal();
         var dados = jQuery(this).serialize();
         jQuery.ajax({
             type: "POST",
             url: "./themes/html/mail/enviar.php",
             data: dados,
             success: function (retorno) {
-                $("form button").text('ENVIAR');
+                $("#modal button").removeAttr('disabled');
+                $("#modal button").removeClass('disabled');
                 $("form input").val("");
                 $("form textarea").val("");
-                $("form button[type = submit]").val("ENVIAR");
 
                 $('#titulo-modal').html('E-mail enviado com Sucesso!');
                 $('#retorno-email').html('<strong>' + retorno + '</strong> <br>' +
@@ -19,11 +19,13 @@ jQuery(document).ready(function () {
                 $("#modal").modal();
             },
             error: function (retorno) {
-                $("form button").text('ENVIAR');
+                $("#modal button").removeAttr('disabled');
+                $("#modal button").removeClass('disabled');
                 $('#retorno-email').text('Email enviado com sucesso!!!' + retorno);
                 $("#modal").modal();
             }
         });
+        $("#modal button").addClass('disabled');
         return false;
     });
 });
