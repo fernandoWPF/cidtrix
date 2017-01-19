@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/cidtrix/themes/html/css/style.css</file>
-            <file>file:/C:/wamp64/www/cidtrix/themes/html/js/mail.js</file>
+            <file>file:/C:/wamp64/www/cidtrix/themes/cidtrix/404.php</file>
             <file>file:/C:/wamp64/www/cidtrix/index.php</file>
-            <file>file:/C:/wamp64/www/cidtrix/themes/html/inc/formulario-email.php</file>
-            <file>file:/C:/wamp64/www/cidtrix/themes/html/mail/enviar.php</file>
+            <file>file:/C:/wamp64/www/cidtrix/themes/cidtrix/inc/formulario-email.php</file>
+            <file>file:/C:/wamp64/www/cidtrix/themes/cidtrix/css/style.css</file>
+            <file>file:/C:/wamp64/www/cidtrix/themes/cidtrix/mail/enviar.php</file>
         </group>
     </open-files>
 </project-private>

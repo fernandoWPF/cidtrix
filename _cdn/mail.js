@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
         var dados = jQuery(this).serialize();
         jQuery.ajax({
             type: "POST",
-            url: "./themes/html/mail/enviar.php",
+            url: "./themes/cidtrix/mail/enviar.php",
             data: dados,
             success: function (retorno) {
                 $("#modal button").removeAttr('disabled');

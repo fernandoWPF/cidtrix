@@ -613,12 +613,13 @@
 }
 
 .main_redesociais a:hover,
-.main_redesociais a:visited {
-    -webkit-text-decoration: none;
-    -moz-text-decoration: none;
-    -ms-text-decoration: none;
-    -o-text-decoration: none;
-    text-decoration: none;
+.main_redesociais a:visited,
+.main_redesociais a:focus{
+    -webkit-text-decoration: none !important;
+    -moz-text-decoration: none !important;
+    -ms-text-decoration: none !important;
+    -o-text-decoration: none !important;
+    text-decoration: none !important;
 }
 @media(max-width: 767px){
     .main_redesociais{
@@ -686,7 +687,6 @@
         border-bottom: none;
     }
 }
-
 p#retorno-email{
     line-height: 2 !important;
 }

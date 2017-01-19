@@ -1,7 +1,7 @@
 <?php
 
-define('HOME', 'http://192.168.137.1/cidtrix');
-define('THEME', 'html');
+define('HOME', 'http://10.24.50.21/cidtrix');
+define('THEME', 'cidtrix');
 
 define('INCLUDE_PATH', HOME . '/themes/' . THEME);
 define('REQUIRE_PATH', 'themes/' . THEME);
@@ -30,10 +30,10 @@ switch ($Url[0]):
         break;
 
     default :
-        $pg_title = 'Desculpe, não encontrado o conteúdo relacionado.';
+        $pg_title = 'Ops! Não encontramos essa página!';
         $pg_desc = 'Você está vendo agora a página 404 pois não encontramos conteúdo relacionado à <b>' . $setUrl . '</b>, mas não saia ainda. Temos algumas dicas para te ajudar com sua pesquisa!';
         $pg_image = $pg_sitekit . '404.png';
-        $pg_url = HOME;
+        $pg_url = INCLUDE_PATH . '/themes/cidtrix/erro/404.php';
         break;
 endswitch;
 
