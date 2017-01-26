@@ -16,8 +16,8 @@ $Mailer->SMTPAuth = true;
 $Mailer->SMTPSecure = 'tls';
 $Mailer->Host = 'smtp.gmail.com';
 $Mailer->Port = 587;
-$Mailer->Username = 'fernando.wesleypf@gmail.com';
-$Mailer->Password = '$ig3db@dm1n';
+$Mailer->Username = 'email';
+$Mailer->Password = 'senha';
 
 // E-Mail do remetente (deve ser o mesmo de quem fez a autenticação
 // nesse caso seu_login@gmail.com)

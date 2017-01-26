@@ -5,33 +5,62 @@ require './_app/Config.inc.php';
 <html lang="pt-br" itemscope itemtype="https://schema.org/Article">
     <head>
         <meta charset="UTF-8">
+        <title><?= $pg_title; ?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <meta name="description" content="<?= $pg_desc; ?>"/>
-        <meta name="robots" content="index, follow"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title><?= $pg_title; ?></title>
-        <link rel="shortcut icon" href="<?= INCLUDE_PATH; ?>/img/favicon.png" />
+        <meta name="robots" content="index, follow"/><!--PARA QUE O GOOGLE SIGA A ESTRUTURA DA PÁGINA-->
+
+        <link rel="author" href="https://plus.google.com/<?= $pg_google_author; ?>/posts"/>
+        <link rel="publisher" href="https://plus.google.com/<?= $pg_google_publisher; ?>"/>
+        <link rel="canonical" href="<?= $pg_url; ?>"/>
+
+        <meta itemprop="name" content="<?= $pg_site; ?>">
+        <meta itemprop="description" content="<?= $pg_desc; ?>">
+        <meta itemprop="image" content="<?= $pg_image; ?>">
+        <meta itemprop="url" content="<?= $pg_url; ?>">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="<?= $pg_title; ?>">
+        <meta property="og:description" content="<?= $pg_desc; ?>">
+        <meta property="og:image" content="<?= $pg_image; ?>">
+        <meta property="og:url" content="<?= $pg_url; ?>">
+        <meta property="og:site_name" content="<?= $pg_site; ?>">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:app_id" content="<?= $pg_fb_app; ?>">
+        <meta property="article:author" content="https://www.facebook.com/<?= $pg_fb_author; ?>">
+        <meta property="article:publisher" content="https://www.facebook.com/<?= $pg_fb_page; ?>">
+
+        <meta property="twitter:card" content="sumary_large_image">
+        <meta property="twitter:site" content="<?= $pg_twitter; ?>">
+        <meta property="twitter:domain" content="<?= $pg_domain; ?>">
+        <meta property="twitter:title" content="<?= $pg_title; ?>">
+        <meta property="twitter:description" content="<?= $pg_desc; ?>">
+        <meta property="twitter:image:src" content="<?= $pg_image; ?>">
+        <meta property="twitter:url" content="<?= $pg_url; ?>">
 
 
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/style.css">
         <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/css/bootstrap.min.css">
+
+        <link rel="shortcut icon" href="<?= INCLUDE_PATH; ?>/img/favicon.png" />
     </head>
 
     <body>
 
         <!--CONTEUDO-->
         <?php
-            $Url[1] = (empty($Url[1]) ? null : $Url[1]);
-
-            if (file_exists(REQUIRE_PATH . '/' . $Url[0] . '.php')):
-                require REQUIRE_PATH . '/' . $Url[0] . '.php';
-            elseif (file_exists(REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php')):
-                require REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php';
-            else:
-                require REQUIRE_PATH . '/404.php';
-            endif;
+        $Url[1] = (empty($Url[1]) ? null : $Url[1]);
+        if (file_exists(REQUIRE_PATH . '/' . $Url[0] . '.php')):
+            require REQUIRE_PATH . '/' . $Url[0] . '.php';
+        elseif (file_exists(REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php')):
+            require REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php';
+        else:
+            require REQUIRE_PATH . '/404.php';
+        endif;
         ?>
         <!--CONTEUDO-->
 

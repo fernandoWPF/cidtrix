@@ -60,7 +60,7 @@ function inputs() {
  */
 function scrollSuave() {
     var $doc = $('html, body');
-    $('a').click(function () {
+    $('.menu-principal-lista a, .footer-menu a').click(function () {
         $doc.animate({
            scrollTop: $($.attr(this, 'href')).offset().top
         }, 1700);

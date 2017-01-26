@@ -2,11 +2,8 @@
 <header class="container-fluid main_cabecalho" id="inicio">
     <h1 class="invisible"><?= $pg_title; ?></h1>
     <article class="row">
-        <div class="col-xs-8 col-sm-6 col-md-6 col-lg-4 col-xs-offset-2 col-sm-offset-3 col-md-offset-3 col-lg-offset-4 main_cabecalho_titulo">
-            <h1><mark>Agência Digital</mark></h1>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main_cabecalho_subtitulo">
-            <p class="tagline">Não Seja Comum, <mark>Seja ÚNICO</mark></p>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main_cabecalho_titulo">
+            <h1 class="text-center"><span>NÃO SEJA COMUM,</span> <mark>SEJA ÚNICO.</mark></h1>
         </div>
     </article>
 </header>
@@ -24,30 +21,31 @@
             <p class="tagline text-center main_solucoes_subtitulo">CONHEÇA MELHOR NOSSAS ESPECIALIDADES</p>
         </div>
     </div>
-
+<!--<a class="btn btn-lg btn-primary">Veja mais</a>-->
     <div class="row">
-        <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <img src="<?= INCLUDE_PATH; ?>/img/criacao-web-sites.png" alt="Criação de Web Sites" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <img src="<?= INCLUDE_PATH; ?>/img/criacao-sites.png" alt="Criação de Web Sites" >
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <h4>CRIAÇÃO DE WEBSITES</h4>
                     <hr>
                     <p class="text-center">
-                        Tenha seu site institucional ou loja virtual que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita nesse vasto mundo da internet, e que necessita passar credibilidade, confiança e autoridade.
+                        Tenha seu site institucional que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita, e que necessita passar credibilidade, confiança e autoridade.
                     </p>
                 </div>
             </div>
         </article>
 
-        <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <img src="<?= INCLUDE_PATH; ?>/img/otimizacao-seo.png" alt="Otimização de Sites - SEO" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <img src="<?= INCLUDE_PATH; ?>/img/seo.png" alt="Otimização de Sites - SEO" >
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <h4>OTIMIZAÇÃO DE SITES - SEO</h4>
                     <hr>
                     <p class="text-center">
@@ -56,38 +54,22 @@
                 </div>
             </div>
         </article>
-    </div>
 
-    <div class="row">
-        <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <img src="<?= INCLUDE_PATH; ?>/img/marketing-digital.png" alt="Marketing Digital" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <img src="<?= INCLUDE_PATH; ?>/img/consultoria.png" alt="Consultoria emm Vendas Digitais" >
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <h4>MARKETING DIGITAL</h4>
-                    <hr>
-                    <p class="text-center">
-                        Em todos os projetos desenvolvidos pela Cidtrix, buscamos sempre criar e manter um relacionamento íntegro e leal. Desta formaa, cada etapa é estudada e orgaanizada para que de fato possamos visualizar e entregar resultados aos nossos clientes.
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-                    <img src="<?= INCLUDE_PATH; ?>/img/consultoria-vendas-digital.png" alt="Consultoria emm Vendas Digitais" >
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <h4>CONSULTORIA EM VENDAS DIGITAIS</h4>
                     <hr>
                     <p class="text-center">
-                        Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados para trazer mais resultados para sua empresa neste mundo digital.
+                        Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados para trazer melhores resultados para sua empresa no mundo digital.
                     </p>
                 </div>
             </div>
         </article>
+
     </div>
 </section>
 <!--FIM SOLUÇÕES - 2º DOBRA-->
@@ -110,7 +92,7 @@
     <h1 class="text-center">SOBRE NÓS</h1>
     <p class="tagline text-center">
         A Cidtrix é uma Empresa voltada para atender o Mercado Web como um todo.<br>
-        Especializada em Marketing Digital, e na Criação de Websites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
+        Especializada em Marketing Digital e na Criação de Websites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
     </p>
 </section>
 <!--FIM SOBRE NÓS - 4º DOBRA-->
@@ -139,13 +121,6 @@
                         <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo">
                         <div class="carousel-text">
                             <h3>RESPONSIVO</h3>
-                            <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <img src="<?= INCLUDE_PATH; ?>/img/seguranca.png" alt="Segurança">
-                        <div class="carousel-text">
-                            <h3>SEGURANÇA</h3>
                             <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                         </div>
                     </article>
@@ -249,7 +224,7 @@
                 Solite-nos um Orçamento. 
             </p>
             <p class="main_orcamento-txt3 text-left">Faça um Orçamento Conosco. Tire suas Dúvidas e Veja como Criamos sua Autoridade através do seu <strong>WebSite</strong>,
-                da <strong>Otimização SEO</strong>, <strong>Gestão de Links Patrocinados</strong>, <strong>Gestão de Redes Sociais</strong>,
+                da <strong>Otimização SEO</strong>, <strong>Gestão de Redes Sociais</strong>,
                 <strong>Consultoria em Vendas Digitais</strong>, entre outros Serviços.
             </p>
         </div>
