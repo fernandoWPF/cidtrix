@@ -2,7 +2,7 @@
 require './_app/Config.inc.php';
 ?>
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="https://schema.org/Article">
+<html lang="pt-br" itemscope itemtype="https://schema.org/WebSite">
     <head>
         <meta charset="UTF-8">
         <title><?= $pg_title; ?></title>
@@ -29,8 +29,8 @@ require './_app/Config.inc.php';
         <meta property="og:site_name" content="<?= $pg_site; ?>">
         <meta property="og:locale" content="pt_BR">
         <meta property="og:app_id" content="<?= $pg_fb_app; ?>">
-        <meta property="article:author" content="https://www.facebook.com/<?= $pg_fb_author; ?>">
-        <meta property="article:publisher" content="https://www.facebook.com/<?= $pg_fb_page; ?>">
+        <meta property="author" content="https://www.facebook.com/<?= $pg_fb_author; ?>">
+        <meta property="publisher" content="https://www.facebook.com/<?= $pg_fb_page; ?>">
 
         <meta property="twitter:card" content="sumary_large_image">
         <meta property="twitter:site" content="<?= $pg_twitter; ?>">
@@ -40,6 +40,9 @@ require './_app/Config.inc.php';
         <meta property="twitter:image:src" content="<?= $pg_image; ?>">
         <meta property="twitter:url" content="<?= $pg_url; ?>">
 
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->  
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">

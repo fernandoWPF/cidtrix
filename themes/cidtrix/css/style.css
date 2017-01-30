@@ -259,7 +259,6 @@
 }
 
 .contato1-txt1 {
-    padding-left: 10px;
     float: left !important;
 }
 
@@ -272,7 +271,6 @@
         font-size: 2.7rem !important;
     }
 }
-
 
 /*SOBRE NÓS*/
 .main_sobre{
@@ -357,8 +355,13 @@
 .carousel-text{
     margin-top: 8px;
     padding: 4px 8px 4px 8px;
-    background-color: #ff7171;
     color: #fff;
+}
+.carousel-text-website{
+    background-color: #a00b0b;
+}
+.carousel-text-marketing{
+    background-color: #f11b1b;
 }
 /*ENTRE EM CONTATO 7º DOBRA*/
 .main_contato2 {
@@ -502,7 +505,7 @@
 
 .main_orcamento-txt {
     padding-left: 50px !important;
-    color: #000;
+    color: #fff;
 }
 @media(max-width: 767px){
     .main_orcamento{
@@ -595,8 +598,8 @@
 /*REDES SOCIAIS*/
 .main_redesociais {
     margin-top: 50px;
-    background-color: #ff3a5f;
-    height: 18vh;
+    background-color: rgba(2,2,2,0.7) !important;
+    height: 10vh;
 }
 
 .main_redesociais img {
@@ -605,7 +608,7 @@
 
 .main_redesociais span {
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 .main_redesociais a:hover,
@@ -618,15 +621,8 @@
     text-decoration: none !important;
 }
 @media(max-width: 767px){
-    .main_redesociais{
-        height: 13vh;
-    }
     .main_redesociais article{
         padding: 0;
-    }
-    .main_redesociais img{
-        height: 55px;
-        width: 50px;
     }
     .main_redesociais span{
         font-size: 1.15rem;
@@ -644,11 +640,11 @@
     color: #fff;
 }
 .main_footer-contato{
-    margin-top: 150px;
+    margin-top: 50px;
     border-bottom: 2px solid #fff;
 }
 .main_footer-contato article{
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 .footer-contato-meio{
     border-left: 1px solid #fff;

@@ -21,7 +21,7 @@
             <p class="tagline text-center main_solucoes_subtitulo">CONHEÇA MELHOR NOSSAS ESPECIALIDADES</p>
         </div>
     </div>
-<!--<a class="btn btn-lg btn-primary">Veja mais</a>-->
+
     <div class="row">
         <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <div class="row">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h4>CRIAÇÃO DE WEBSITES</h4>
+                    <h4>CRIAÇÃO DE SITES</h4>
                     <hr>
                     <p class="text-center">
                         Tenha seu site institucional que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita, e que necessita passar credibilidade, confiança e autoridade.
@@ -58,7 +58,7 @@
         <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <img src="<?= INCLUDE_PATH; ?>/img/consultoria.png" alt="Consultoria emm Vendas Digitais" >
+                    <img src="<?= INCLUDE_PATH; ?>/img/consultoria.png" alt="Consultoria em Vendas Online" >
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <h4>CONSULTORIA EM VENDAS DIGITAIS</h4>
@@ -78,10 +78,10 @@
 <section class="container-fluid main_contato1">
     <h1 class="invisible">Faça um Orçamento Online e sem Compromisso</h1>
     <div class="row">
-        <aside class="col-xs-3 col-sm-5 col-md-4 col-lg-3 contato1-txt1">
+        <aside class="col-xs-3 col-sm-5 col-md-4 col-lg-6 contato1-txt1">
             <h2 class="text-center">Entre em Contato</h2>
         </aside>
-        <aside class="col-xs-6 col-sm-6 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-3 contato1-txt2">
+        <aside class="col-xs-6 col-sm-6 col-md-4 col-md-offset-4 col-lg-5 col-lg-offset-1 contato1-txt2">
             <h2 class="text-center">Faça um Orçamento Online</h2>
         </aside>
     </div>
@@ -92,7 +92,7 @@
     <h1 class="text-center">SOBRE NÓS</h1>
     <p class="tagline text-center">
         A Cidtrix é uma Empresa voltada para atender o Mercado Web como um todo.<br>
-        Especializada em Marketing Digital e na Criação de Websites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
+        Especializada em Marketing Digital e na Criação de Sites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
     </p>
 </section>
 <!--FIM SOBRE NÓS - 4º DOBRA-->
@@ -112,14 +112,14 @@
                 <div class="carousel-inner"  align="center">
                     <article class="item active">
                         <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade">
-                        <div class="carousel-text">
+                        <div class="carousel-text carousel-text-website">
                             <h3>PONTUALIDADE</h3>
                             <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                         </div>
                     </article>
                     <article class="item">
                         <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo">
-                        <div class="carousel-text">
+                        <div class="carousel-text carousel-text-website">
                             <h3>RESPONSIVO</h3>
                             <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                         </div>
@@ -131,7 +131,7 @@
         </div>
     </div>
 </section>
-<!--FIM WEBSITES - 5º DOBRA-->
+<!--FIM Sites - 5º DOBRA-->
 
 <!--MARKETIN DIGITAL - 6º DOBRA-->
 <section class="container-fluid main_marketing_digital">
@@ -149,21 +149,21 @@
                     <div class="carousel-inner"  align="center">
                         <article class="item active">
                             <img src="<?= INCLUDE_PATH; ?>/img/autoridade.png" alt="Autoridade">
-                            <div class="carousel-text">
+                            <div class="carousel-text carousel-text-marketing">
                                 <h3>AUTORIDADE</h3>
                                 <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                             </div>
                         </article>
                         <article class="item">
                             <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.png" alt="Monitoramento">
-                            <div class="carousel-text">
+                            <div class="carousel-text carousel-text-marketing">
                                 <h3>MONITORE</h3>
                                 <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                             </div>
                         </article>
                         <article class="item">
                             <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados">
-                            <div class="carousel-text">
+                            <div class="carousel-text carousel-text-marketing">
                                 <h3>RESULTADOS</h3>
                                 <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                             </div>
@@ -205,9 +205,8 @@
     </h1>
     <div class="div-btn">
         <button type="button" class="btn btn-default btn-portifolio active" onclick="portifolioAtual(1)">Todos</button>
-        <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(2)">Websites</button>
-        <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(3)">Marketing Digital</button>
-        <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(4)">Identidade Visual</button>
+        <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(2)">Sites</button>
+        <button type="button" class="btn btn-default btn-portifolio" onclick="portifolioAtual(3)">Identidade Visual</button>
     </div>
     <div class="container">
         <?php require REQUIRE_PATH . '/inc/portifolio.php'; ?>
@@ -223,7 +222,7 @@
             <p class="tagline main_orcamento-txt2 text-left">
                 Solite-nos um Orçamento. 
             </p>
-            <p class="main_orcamento-txt3 text-left">Faça um Orçamento Conosco. Tire suas Dúvidas e Veja como Criamos sua Autoridade através do seu <strong>WebSite</strong>,
+            <p class="main_orcamento-txt3 text-left">Faça um Orçamento Conosco. Tire suas Dúvidas e Veja como Criamos sua Autoridade através do seu <strong>Site</strong>,
                 da <strong>Otimização SEO</strong>, <strong>Gestão de Redes Sociais</strong>,
                 <strong>Consultoria em Vendas Digitais</strong>, entre outros Serviços.
             </p>
@@ -266,18 +265,32 @@
 <section class="container-fluid main_redesociais">
     <h1 class="invisible">A Cidtrix Nas Redes Sociais</h1>
     <div class="row text-center">
-        <article class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 text-center">
+        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
             <h3 class="invisible">Curta Nossa Página No Facebook</h3>
             <a href="https://facebook.com" target="_blank">
-                <img src="<?= INCLUDE_PATH; ?>/img/Facebook.png" alt="Curta Nossa Página No Facebook">
-                <span>Compartilhe</span>
+                <img src="<?= INCLUDE_PATH; ?>/img/facebook.png" alt="Curta Nossa Página No Facebook">
+                <span class="text-left">Compartilhe</span>
             </a>
         </article>
-        <article class="col-xs-6 col-sm-6 col-md-4 col-lg-4 text-center">
+        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
             <h3 class="invisible">Siga-nos no Twitter</h3>
             <a href="https://twitter.com" target="_blank">
-                <img src="<?= INCLUDE_PATH; ?>/img/Twitter.png" alt="Siga-nos no Twitter">
-                <span>Siga</span>
+                <img src="<?= INCLUDE_PATH; ?>/img/twitter.png" alt="Siga-nos no Twitter">
+                <span class="text-left">Siga</span>
+            </a>
+        </article>
+        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+            <h3 class="invisible">Curta-nos no Instagram</h3>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="<?= INCLUDE_PATH; ?>/img/instagram.png" alt="Curta-nos no Instagram">
+                <span class="text-left">Curta</span>
+            </a>
+        </article>
+        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+            <h3 class="invisible">Conecte-se no Google+</h3>
+            <a href="https://plus.google.com" target="_blank">
+                <img src="<?= INCLUDE_PATH; ?>/img/g+.png" alt="Conecte-se no Google+">
+                <span class="text-left">Conecte-se</span>
             </a>
         </article>
     </div>
@@ -287,7 +300,7 @@
 <div id="msg"></div>
 
 <!--FOOTER COM CONTATO DA CIDTRIX-->
-<footer class="container-fluid main_footer">
+<footer class="container-fluid main_footer" itemprop="provider" itemscope itemtype="http://schema.org/Organization">
     <h1 class="invisible">Entre Em Contato Conosco</h1>
     <div class="container main_footer-contato">
         <div class="row text-center">
@@ -302,7 +315,7 @@
                 <p class="tagline">44 98852-7951</p>
             </article>
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="<?= INCLUDE_PATH; ?>/img/email-footer.png" alt="Email" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/B.png" alt="Email" class="img-responsive">
                 <h5>ATENDIMENTO AO CLIENTE</h5>
                 <p class="tagline">contato@cidtrix.com.br</p>
             </article>
@@ -323,7 +336,8 @@
         </div>
     </div>
     <div class="clearfix"></div>
-    <p class="text-center">&copy; <?= date('Y'); ?> - COPYRIGHT CIDTRIX, TODOS OS DIREITOS RESERVADOS.</p>
+    <p class="text-center">&copy; <?= date('Y'); ?> - <span itemprop="name">CIDTRIX - Soluções</span> </span>, TODOS OS DIREITOS RESERVADOS.</p>
+    <meta itemprop="sameAs" content="https://www.cidtrix.com.br"/>
 </footer>
 <div class="container">
     <div class="modal fade" tabindex="-1" role="dialog" id="modal">
