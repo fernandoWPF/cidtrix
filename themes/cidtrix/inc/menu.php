@@ -1,6 +1,6 @@
 <div class="navbar navbar-inverse navbar-fixed-top main_menu">
     <div class="container">
-        <div class="navbar-header" style="margin-top: 15px">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#menu">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -11,7 +11,7 @@
             </a>
         </div>
 
-        <div class="collapse navbar-collapse" id="menu" style="margin-top: 15px">
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav navbar-right menu-principal-lista">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#solucoes">Soluções</a></li>

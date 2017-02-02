@@ -49,7 +49,7 @@
                     <h4>OTIMIZAÇÃO DE SITES - SEO</h4>
                     <hr>
                     <p class="text-center">
-                        Nossa consultoria em SEO irá potencializar e melhorar seu posicionamento(rankeamento) do seu site em sites de busca, como o Google. Afinal, lembre-se: Quem não é visto, não é lembrado!
+                        Nossa consultoria em SEO irá potencializar e melhorar seu posicionamento em sites de busca como o Google. Afinal, lembre-se: Quem não é visto, não é lembrado!
                     </p>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     <h4>CONSULTORIA EM VENDAS DIGITAIS</h4>
                     <hr>
                     <p class="text-center">
-                        Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados para trazer melhores resultados para sua empresa no mundo digital.
+                        Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados em trazer melhores resultados para sua empresa.
                     </p>
                 </div>
             </div>
@@ -89,94 +89,66 @@
 <!--FIM ORÇAMENTO - 3º DOBRA-->
 <!--SOBRE NÓS - 4º DOBRA-->
 <section class="container main_sobre">
-    <h1 class="text-center">SOBRE NÓS</h1>
+    <h1 class="text-center">Por que somos <strong>ÚNICOS ?</strong></h1>
     <p class="tagline text-center">
         A Cidtrix é uma Empresa voltada para atender o Mercado Web como um todo.<br>
-        Especializada em Marketing Digital e na Criação de Sites, oferecemos o que há de maior qualidade e tecnologia para atender as expectativas dos nossos clientes.
+        Especializada na Criação e Otimização de Sites, oferecemos o que há de melhor qualidade em tecnologia, para atender as expectativas dos nossos clientes.<br>
+        Somos únicos porque queremos e faremos com que você obtenha os resultados esperados, e que sua empresa atinja todo o seu verdadeiro potencial.<br>
+        <strong>Veja nossos diferenciais.</strong>
     </p>
-</section>
-<!--FIM SOBRE NÓS - 4º DOBRA-->
-
-<!--WEBSITES - 5º DOBRA-->
-<section class="container-fluid main_websites">
-    <div class="row">
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 banner banner-left"></div>
-        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 banner banner-title">
-            <h1 class="text-center">WEBSITES</h1>
-        </div>
-        <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 banner banner-right"></div>
-    </div>
-    <div class="container websites_img">
-        <div id="slideWeb">
-            <div id="slideWebSites" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner"  align="center">
-                    <article class="item active">
-                        <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade">
-                        <div class="carousel-text carousel-text-website">
-                            <h3>PONTUALIDADE</h3>
-                            <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                        </div>
-                    </article>
-                    <article class="item">
-                        <img src="<?= INCLUDE_PATH; ?>/img/responsivo.png" alt="Responsivo">
-                        <div class="carousel-text carousel-text-website">
-                            <h3>RESPONSIVO</h3>
-                            <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                        </div>
-                    </article>
-                </div>
-                <a class="left carousel-control" href="#slideWebSites" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                <a class="right carousel-control" href="#slideWebSites" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <div class="row text-center main_sobre-item">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="">
+                <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.jpg" alt="Pontualidade" class="img-responsive">
+                <h3>PONTUALIDADE</h3>
+                <hr>
+                <!--Um dos pontos mais valiosos que dão credibilidade para a empresa é passar um prazo e ter a responsabilidade de cumprir com o mesmo.--> 
+                <p class="tagline">Aplicamos métodos e análises para o desenvolvimento do seu projeto de tal forma que o prazo determinado será o suficiente para entregá-lo 100% finalizado na data estipulada, além de você acompanhar cada etapa do seu desenvolvimento.</p>
             </div>
-        </div>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="">
+                <img src="<?= INCLUDE_PATH; ?>/img/responsivo.jpg" alt="Responsivo" class="img-responsive">
+                <h3>RESPONSIVO</h3>
+                <hr>
+                <p class="tagline">Todos os nossos projetos são desenvolvidos para que adaptem a qualquer dispositivo. Seus clientes poderão acessar o seu site de qualquer aparelho, seja ele um smartphone, tablet ou notebook, independentemente do tamanho de sua tela.</p>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="">
+                <img src="<?= INCLUDE_PATH; ?>/img/autoridade.jpg" alt="Autoridade" class="img-responsive">
+                <h3>AUTORIDADE</h3>
+                <hr>
+                <p class="tagline">Através da identidade visual desenvolvida pela Cidtrix, sua empresa possuirá um destaque maior no mercado, passando credibilidade e autoridade para os seus clientes. Deixe com a gente, somos especialistas nisso.</p>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="">
+                <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.jpg" alt="Monitoramento" class="img-responsive">
+                <h3>MONITORE</h3>
+                <hr>
+                <p class="tagline">Através de ferramentas como o Google Analytics incorporadas ao seu site, você poderá monitorar todo o tráfego em sua empresa na internet, como por exemplo, quem está acessando a sua empresa, por onde estão acessando e de onde estão acessando.</p>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="">
+                <img src="<?= INCLUDE_PATH; ?>/img/equipe-qualificada.jpg" alt="Equipe qualificada" class="img-responsive">
+                <h3>EQUIPE QUALIFICADA</h3>
+                <hr>
+                <p class="tagline">Nossa equipe conta com profissionais altamente qualificados capaz de trazer resultados surpreendentes para sua empresa. Analisamos cada caso, estudamos o comportamento do mercado, temos sempre soluções inovadoras em mente.</p>
+            </div>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="">
+                <img src="<?= INCLUDE_PATH; ?>/img/resultados.jpg" alt="Resultados" class="img-responsive">
+                <h3>RESULTADOS</h3>
+                <hr>
+                <p class="tagline">Garantimos sempre os melhores resultados. Invista na sua empresa, utilize todo o potêncial oferecido pelo mundo digital. Tenha essa experiência conosco. Descubra-se com a gente!</p>
+            </div>
+        </article>
     </div>
 </section>
 <!--FIM Sites - 5º DOBRA-->
-
-<!--MARKETIN DIGITAL - 6º DOBRA-->
-<section class="container-fluid main_marketing_digital">
-    <div class="row">
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 banner banner-left"></div>
-        <div class="col-xs-6 col-sm-7 col-md-4 col-lg-4 banner banner-title">
-            <h1 class="text-center">MARKETING DIGITAL</h1>
-        </div>
-        <div class="col-xs-5 col-sm-4 col-md-7 col-lg-7 banner banner-right"></div>
-    </div>
-    <div class="marketing_img">
-        <div class="container">
-            <div id="slideMarketing">
-                <div id="slideMarketingDigital" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner"  align="center">
-                        <article class="item active">
-                            <img src="<?= INCLUDE_PATH; ?>/img/autoridade.png" alt="Autoridade">
-                            <div class="carousel-text carousel-text-marketing">
-                                <h3>AUTORIDADE</h3>
-                                <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                            </div>
-                        </article>
-                        <article class="item">
-                            <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.png" alt="Monitoramento">
-                            <div class="carousel-text carousel-text-marketing">
-                                <h3>MONITORE</h3>
-                                <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                            </div>
-                        </article>
-                        <article class="item">
-                            <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados">
-                            <div class="carousel-text carousel-text-marketing">
-                                <h3>RESULTADOS</h3>
-                                <p class="tagline">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <a class="left carousel-control" href="#slideMarketingDigital" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="right carousel-control" href="#slideMarketingDigital" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--FIM MARKETIN DIGITAL - 6º DOBRA-->
 
 <!--ENTRE EM CONTATO 7º DOBRA-->
 <section class="container-fluid main_contato2">
@@ -264,29 +236,29 @@
 <!--REDES SOCIAIS DA CIDTRIX-->
 <section class="container-fluid main_redesociais">
     <h1 class="invisible">A Cidtrix Nas Redes Sociais</h1>
-    <div class="row text-center">
-        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+    <div class="row" align="center">
+        <article class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-md-offset-2">
             <h3 class="invisible">Curta Nossa Página No Facebook</h3>
             <a href="https://facebook.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/facebook.png" alt="Curta Nossa Página No Facebook">
                 <span class="text-left">Compartilhe</span>
             </a>
         </article>
-        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+        <article class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
             <h3 class="invisible">Siga-nos no Twitter</h3>
             <a href="https://twitter.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/twitter.png" alt="Siga-nos no Twitter">
                 <span class="text-left">Siga</span>
             </a>
         </article>
-        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+        <article class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
             <h3 class="invisible">Curta-nos no Instagram</h3>
             <a href="https://www.instagram.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/instagram.png" alt="Curta-nos no Instagram">
                 <span class="text-left">Curta</span>
             </a>
         </article>
-        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+        <article class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
             <h3 class="invisible">Conecte-se no Google+</h3>
             <a href="https://plus.google.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/g+.png" alt="Conecte-se no Google+">
@@ -305,17 +277,17 @@
     <div class="container main_footer-contato">
         <div class="row text-center">
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="<?= INCLUDE_PATH; ?>/img/endereco-footer.png" alt="Endereço" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/endereco-footer.png" alt="Endereço" class="img-responsive" width="40" height="40">
                 <h5>MARINGÁ - PR</h5>
                 <p class=" tagline">Rua da Santa Ceia, 159-B</p>
             </article>
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-contato-meio">
-                <img src="<?= INCLUDE_PATH; ?>/img/fone-footer.png" alt="Telefone" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/fone-footer.png" alt="Telefone" class="img-responsive" width="40" height="40">
                 <h5>ATENDIMENTO AO CLIENTE</h5>
                 <p class="tagline">44 98852-7951</p>
             </article>
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="<?= INCLUDE_PATH; ?>/img/B.png" alt="Email" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/email-footer.png" alt="Email" class="img-responsive" width="40" height="40">
                 <h5>ATENDIMENTO AO CLIENTE</h5>
                 <p class="tagline">contato@cidtrix.com.br</p>
             </article>
@@ -323,7 +295,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <nav class=" col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 footer-menu text-center">
+            <nav class=" col-md-12 col-lg-12 footer-menu">
                 <h2 class="invisible">Mais Sobre a CidTrix - Agência de Marketing Digital</h2>
                 <ul class="nav navbar navbar-nav">
                     <li><a href="#inicio">Início</a></li>

@@ -9,8 +9,8 @@ $getUrl = strip_tags(trim(filter_input(INPUT_GET, 'url', FILTER_DEFAULT)));
 $setUrl = (empty($getUrl) ? 'index' : $getUrl);
 $Url = explode('/', $setUrl);
 
-$pg_name = 'CIDTRIX Criação de Sites e Consultoria em vendas Online';
-$pg_site = 'CIDTRIX Criação de Sites e Consultoria em vendas Online';
+$pg_name = 'Cidtrix | Criação de Sites e Consultoria em Maringá';
+$pg_site = 'Cidtrix | Criação de Sites e Consultoria em Maringá';
 $pg_google_author = '';//CRIAR CONTA DO GOOGLE+ CLICAR NA FOTO E PEGAR O OID DA URL
 $pg_google_publisher = '';//VER AULA 33 NO MINUTO 7:00
 $pg_fb_app = '';//VER AULA 34 A PARTIR DO MINUTO 8:00

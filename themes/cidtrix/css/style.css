@@ -62,9 +62,8 @@
 /*MENU PRINCIPAL*/
 
 .logo-cidtrix {
-    margin-top: -8px;
-    width: 140px;
-    height: 40px;
+    width: 90px;
+    height: 25px;
 }
 .main_menu {
     background-color: rgba(2,2,2,0.7) !important;
@@ -73,10 +72,6 @@
     -ms-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
     -o-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
     box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
-}
-
-.main_menu > div{
-    height: 80px !important;
 }
 
 .menu-principal-lista {
@@ -246,7 +241,8 @@
     margin-top: 30vh;
     line-height: 1;
     font-weight: lighter;
-    color: #f3d6d6;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
     -webkit-transform: translateY(-45%);
     -moz-transform: translateY(-45%);
     -ms-transform: translateY(-45%);
@@ -276,10 +272,6 @@
 .main_sobre{
     margin-top: 30px;
 }
-.main_sobre h1{
-    font-weight: 700;
-    font-size: 5rem;
-}
 .main_sobre p{
     font-size: 2rem;
     color: #777;
@@ -292,77 +284,25 @@
         font-size: 4rem;
     }
 }
-/*WEBSITES E MARKETING DIGITAL*/
-.main_websites, .main_marketing_digital{
-    margin-top: 85px;
+
+/*PORQUE SOMOS ÚNICOS*/
+.main_sobre-item article{
+    margin: 13px 0;
+    
 }
-.main_websites .banner{
-    padding: 0 !important;
-    background-color: #a00b0b;
-    height: 80px;
-}
-.main_websites .banner-title{
-    border: solid 15px #a00b0b;
-    height: 110px;
-    margin-top: -15px;
-}
-.main_marketing_digital .banner{
-    padding: 0 !important;
-    background-color: #f11b1b;
-    height: 80px;
-}
-.main_marketing_digital .banner-title{
-    border: solid 15px #f11b1b;
-    height: 110px;
-    margin-top: -15px;
+.main_sobre-item p{
+    font-size: 1.5rem;
 }
 
-.main_websites h1, .main_marketing_digital h1{
-    color: #fff;
+.main_sobre-item div{
+    padding: 10px;
+    height: 480px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-.banner-right{
-    border-left: 15px solid #fff;
-}
-.banner-left{
-    border-right: 15px solid #fff;
-}
-@media(max-width: 991px){
-    .banner-right{
-        border-left: 8px solid #fff !important;
-    }
-    .banner-left{
-        border-right: 8px solid #fff !important;
-    }
-}
-@media(max-width: 767px){
-    .banner-title h1{
-        font-size: 1.4rem;
-        margin-top: 30px !important;
-    }
-}
-/*WEBSITES E MARKETING DIGITAL - CORPO*/
-.websites_img, .marketing_img{
-    margin-top: 30px;
-}
-.main_marketing_digital .carousel-control.left, .main_marketing_digital .carousel-control.right,
-.main_websites .carousel-control.left, .main_websites .carousel-control.right{
-    background-image: none !important;
-}
-.main_marketing_digital .carousel-control.left > span, .main_marketing_digital .carousel-control.right > span,
-.main_websites .carousel-control.left > span, .main_websites .carousel-control.right > span{
-    color: #888 !important;
-}
-.carousel-text{
-    margin-top: 8px;
-    padding: 4px 8px 4px 8px;
-    color: #fff;
-}
-.carousel-text-website{
-    background-color: #a00b0b;
-}
-.carousel-text-marketing{
-    background-color: #f11b1b;
-}
+/*PORQUE SOMOS ÚNICOS*/
+
+
 /*ENTRE EM CONTATO 7º DOBRA*/
 .main_contato2 {
     margin-top: 50px;
@@ -631,6 +571,10 @@
 @media(max-width: 991px){
     .main_redesociais{
         margin-top: 0;
+        height: 15vh;
+    }
+    .main_redesociais article a{
+        display: table-caption;
     }
 }
 
