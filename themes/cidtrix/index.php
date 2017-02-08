@@ -79,7 +79,7 @@
     <h1 class="invisible">Faça um Orçamento Online e sem Compromisso</h1>
     <div class="row">
         <aside class="col-xs-3 col-sm-5 col-md-4 col-lg-6 contato1-txt1">
-            <h2 class="text-center">Entre em Contato</h2>
+            <h2 class="text-left">Entre em Contato</h2>
         </aside>
         <aside class="col-xs-6 col-sm-6 col-md-4 col-md-offset-4 col-lg-5 col-lg-offset-1 contato1-txt2">
             <h2 class="text-center">Faça um Orçamento Online</h2>
@@ -90,14 +90,14 @@
 <!--SOBRE NÓS - 4º DOBRA-->
 <section class="container main_sobre">
     <h1 class="text-center">Por que somos <strong>ÚNICOS ?</strong></h1>
-    <p class="tagline text-center">
-        A Cidtrix é uma Empresa voltada para atender o Mercado Web como um todo.<br>
-        Especializada na Criação e Otimização de Sites, oferecemos o que há de melhor qualidade em tecnologia, para atender as expectativas dos nossos clientes.<br>
-        Somos únicos porque queremos e faremos com que você obtenha os resultados esperados, e que sua empresa atinja todo o seu verdadeiro potencial.<br>
-        <strong>Veja nossos diferenciais.</strong>
+    <p class="tagline text-justify">
+        Somos uma empresa voltada para atender o mercado web como um todo.
+        Especializada na criação e otimização de sites, consultoria em vendas digitais e na criação de identidade visual, oferecemos o que há de melhor qualidade em tecnologia, para atender as expectativas dos nossos clientes.
+        Somos únicos porque queremos e faremos com que você obtenha os resultados esperados, e que sua empresa atinja todo o seu verdadeiro potencial. Tenha uma experiência conosco, e descubra do que você é capaz!<br>
     </p>
+    <p class="text-center"><strong>Veja nossos diferenciais.</strong></p>
     <div class="row text-center main_sobre-item">
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
             <div class="">
                 <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.jpg" alt="Pontualidade" class="img-responsive">
                 <h3>PONTUALIDADE</h3>
@@ -106,31 +106,31 @@
                 <p class="tagline">Aplicamos métodos e análises para o desenvolvimento do seu projeto de tal forma que o prazo determinado será o suficiente para entregá-lo 100% finalizado na data estipulada, além de você acompanhar cada etapa do seu desenvolvimento.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
             <div class="">
                 <img src="<?= INCLUDE_PATH; ?>/img/responsivo.jpg" alt="Responsivo" class="img-responsive">
-                <h3>RESPONSIVO</h3>
+                <h3>PROJETOS RESPONSIVOS</h3>
                 <hr>
                 <p class="tagline">Todos os nossos projetos são desenvolvidos para que adaptem a qualquer dispositivo. Seus clientes poderão acessar o seu site de qualquer aparelho, seja ele um smartphone, tablet ou notebook, independentemente do tamanho de sua tela.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
             <div class="">
                 <img src="<?= INCLUDE_PATH; ?>/img/autoridade.jpg" alt="Autoridade" class="img-responsive">
                 <h3>AUTORIDADE</h3>
                 <hr>
-                <p class="tagline">Através da identidade visual desenvolvida pela Cidtrix, sua empresa possuirá um destaque maior no mercado, passando credibilidade e autoridade para os seus clientes. Deixe com a gente, somos especialistas nisso.</p>
+                <p class="tagline">Através da consultoria realizada pela Cidtrix, sua empresa possuirá um destaque maior no mercado, passando credibilidade e autoridade para os seus clientes. Deixe com a gente, somos especialistas nisso.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
             <div class="">
                 <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.jpg" alt="Monitoramento" class="img-responsive">
-                <h3>MONITORE</h3>
+                <h3>MONITORAMENTO</h3>
                 <hr>
-                <p class="tagline">Através de ferramentas como o Google Analytics incorporadas ao seu site, você poderá monitorar todo o tráfego em sua empresa na internet, como por exemplo, quem está acessando a sua empresa, por onde estão acessando e de onde estão acessando.</p>
+                <p class="tagline">Através de ferramentas como o Google Analytics incorporadas ao seu site, você poderá monitorar todo o tráfego em sua empresa na internet, como por exemplo, quem está acessando, por onde estão acessando e de onde estão acessando.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
             <div class="">
                 <img src="<?= INCLUDE_PATH; ?>/img/equipe-qualificada.jpg" alt="Equipe qualificada" class="img-responsive">
                 <h3>EQUIPE QUALIFICADA</h3>
@@ -138,10 +138,10 @@
                 <p class="tagline">Nossa equipe conta com profissionais altamente qualificados capaz de trazer resultados surpreendentes para sua empresa. Analisamos cada caso, estudamos o comportamento do mercado, temos sempre soluções inovadoras em mente.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
             <div class="">
                 <img src="<?= INCLUDE_PATH; ?>/img/resultados.jpg" alt="Resultados" class="img-responsive">
-                <h3>RESULTADOS</h3>
+                <h3>MELHORES RESULTADOS</h3>
                 <hr>
                 <p class="tagline">Garantimos sempre os melhores resultados. Invista na sua empresa, utilize todo o potêncial oferecido pelo mundo digital. Tenha essa experiência conosco. Descubra-se com a gente!</p>
             </div>
@@ -214,17 +214,17 @@
         </div>
     </div>
     <div class="row">
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow flipInY">
             <img src="<?= INCLUDE_PATH; ?>/img/endereco.png" alt="Endereço" class="img-responsive">
-            <h3><strong>Nosso Endereço</strong></h3>
-            <p class=" tagline">Rua da Santa Ceia, 159-B</p>
+            <h3><strong>Cidade</strong></h3>
+            <p class=" tagline">Maringá - PR</p>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow flipInY">
             <img src="<?= INCLUDE_PATH; ?>/img/telefone.png" alt="Telefone" class="img-responsive">
             <h3><strong>Telefone</strong></h3>
             <p class="tagline">44 98852-7951</p>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow flipInY">
             <img src="<?= INCLUDE_PATH; ?>/img/email.png" alt="Email" class="img-responsive">
             <h3><strong>Envie-nos um Email</strong></h3>
             <p class="tagline">contato@cidtrix.com.br</p>
@@ -237,7 +237,7 @@
 <section class="container-fluid main_redesociais">
     <h1 class="invisible">A Cidtrix Nas Redes Sociais</h1>
     <div class="row" align="center">
-        <article class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-md-offset-2">
+        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-md-offset-1">
             <h3 class="invisible">Curta Nossa Página No Facebook</h3>
             <a href="https://facebook.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/facebook.png" alt="Curta Nossa Página No Facebook">
@@ -258,7 +258,7 @@
                 <span class="text-left">Curta</span>
             </a>
         </article>
-        <article class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+        <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
             <h3 class="invisible">Conecte-se no Google+</h3>
             <a href="https://plus.google.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/g+.png" alt="Conecte-se no Google+">
@@ -278,8 +278,8 @@
         <div class="row text-center">
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img src="<?= INCLUDE_PATH; ?>/img/endereco-footer.png" alt="Endereço" class="img-responsive" width="40" height="40">
-                <h5>MARINGÁ - PR</h5>
-                <p class=" tagline">Rua da Santa Ceia, 159-B</p>
+                <h5>CIDADE</h5>
+                <p class="tagline">Maringá - PR</p>
             </article>
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-contato-meio">
                 <img src="<?= INCLUDE_PATH; ?>/img/fone-footer.png" alt="Telefone" class="img-responsive" width="40" height="40">
@@ -295,9 +295,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <nav class=" col-md-12 col-lg-12 footer-menu">
-                <h2 class="invisible">Mais Sobre a CidTrix - Agência de Marketing Digital</h2>
-                <ul class="nav navbar navbar-nav">
+            <nav class="col-md-8 col-lg-6 col-md-offset-2 col-lg-offset-3 footer-menu">
+                <h2 class="invisible">Mais Sobre a CidTrix</h2>
+                <ul class="nav navbar navbar-nav text-center">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#solucoes">Soluções</a></li>
                     <li><a href="#portifolio">Portifólio</a></li>

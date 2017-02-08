@@ -211,7 +211,6 @@
     -ms-transition: ease-in-out 0.5s;
     -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
-    cursor: pointer;
 }
 
 .main_solucoes article:hover hr {
@@ -257,6 +256,9 @@
 .contato1-txt1 {
     float: left !important;
 }
+.contato1-txt1 h2 {
+    padding-left: 25px !important;
+}
 
 .contato1-txt2 {
     padding-right: 10px;
@@ -288,17 +290,32 @@
 /*PORQUE SOMOS ÚNICOS*/
 .main_sobre-item article{
     margin: 13px 0;
-    
+}
+.main_sobre-item img{
+    border-radius: 2%;
 }
 .main_sobre-item p{
     font-size: 1.5rem;
 }
-
 .main_sobre-item div{
     padding: 10px;
     height: 480px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+@media(max-width: 991px){
+    .main_sobre-item img{
+        width: 740px !important;
+        display: inline-block !important;
+    }
+    .main_sobre-item div{
+        height: 660px !important;
+    }
+}
+@media (max-width: 767px){
+    .main_sobre-item div {
+        height: 460px !important;
+    }
 }
 /*PORQUE SOMOS ÚNICOS*/
 
@@ -388,7 +405,7 @@
 .main_portifolio{
     margin-top: 30px;
 }
-.portifolio-identidade, .portifolio-todos, .portifolio-marketing, .portifolio-site{
+.portifolio-identidade, .portifolio-todos, .portifolio-site{
     margin-top: 15px;
     display: none;
 }
@@ -505,6 +522,9 @@
 .main_contato3{
     margin-top: 30px;
 }
+.main_contato3 h3{
+    margin-top: 0;
+}
 .main_contato3 h1{
     margin-bottom: 130px;
     color: #000;
@@ -517,7 +537,9 @@
     text-align: center;
 }
 .main_contato3 article > img{
-    margin-top: -85px;
+    height: 80px;
+    width: 70px;
+    margin-top: -75px;
     display: inline-block;
 }
 @media(max-width: 767px){
@@ -573,6 +595,9 @@
         margin-top: 0;
         height: 15vh;
     }
+    .main_redesociais span{
+        font-size: 1.3rem !important;
+    }
     .main_redesociais article a{
         display: table-caption;
     }
@@ -597,8 +622,13 @@
 .main_footer-contato img{
     display: inline-block;
 }
+@media(min-width:768px){
+    .footer-menu ul{
+        margin-left: 45px !important;
+    }
+}
 .footer-menu{
-    margin: 40px 40px;
+    padding: 30px 30px;
 }
 .footer-menu a{
     color: #fff;

@@ -1,6 +1,6 @@
 <?php
 
-define('HOME', 'http://10.24.50.21/cidtrix');
+define('HOME', './');
 define('THEME', 'cidtrix');
 define('INCLUDE_PATH', HOME . '/themes/' . THEME);
 define('REQUIRE_PATH', 'themes/' . THEME);
@@ -24,7 +24,7 @@ $pg_sitekit = INCLUDE_PATH . '/img/sitekit/';
 switch ($Url[0]):
     case 'index':
         $pg_title = $pg_name;
-        $pg_desc = 'CidTrix Soluções em Sites e Marketing Digital. Somos especializados na criação e otimização de sites, e consultoria para vendas online. ';
+        $pg_desc = 'CidTrix Soluções. Somos especializados na criação e otimização de sites, criação de identidade visual e consultoria em vendas online.';
         $pg_image = $pg_sitekit . 'cidtrix.png';
         $pg_url = HOME;
         break;
