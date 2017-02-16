@@ -15,11 +15,12 @@ require './_app/Config.inc.php';
         <link rel="author" href="https://plus.google.com/<?= $pg_google_author; ?>/posts"/>
         <link rel="publisher" href="https://plus.google.com/<?= $pg_google_publisher; ?>"/>
         <link rel="canonical" href="<?= $pg_url; ?>"/>
+        <link rel="alternate" hreflang="pt-br" href="http://www.cidtrix.com.br" />
 
         <meta itemprop="name" content="<?= $pg_site; ?>">
         <meta itemprop="description" content="<?= $pg_desc; ?>">
         <meta itemprop="image" content="<?= $pg_image; ?>">
-        <meta itemprop="url" content="<?= $pg_url; ?>">
+        <meta itemprop="url" content="http://cidtrix.com.br">
 
         <meta property="og:type" content="article">
         <meta property="og:title" content="<?= $pg_title; ?>">
@@ -28,7 +29,6 @@ require './_app/Config.inc.php';
         <meta property="og:url" content="<?= $pg_url; ?>">
         <meta property="og:site_name" content="<?= $pg_site; ?>">
         <meta property="og:locale" content="pt_BR">
-        <meta property="og:app_id" content="<?= $pg_fb_app; ?>">
         <meta property="author" content="https://www.facebook.com/<?= $pg_fb_author; ?>">
         <meta property="publisher" content="https://www.facebook.com/<?= $pg_fb_page; ?>">
 
@@ -53,7 +53,9 @@ require './_app/Config.inc.php';
     </head>
 
     <body>
-
+        <?php
+        require REQUIRE_PATH . '/inc/analyticstracking.php';
+        ?>
         <!--CONTEUDO-->
         <?php
         $Url[1] = (empty($Url[1]) ? null : $Url[1]);
@@ -71,6 +73,7 @@ require './_app/Config.inc.php';
         <script src="<?= HOME; ?>/_cdn/bootstrap.min.js"></script>
         <script src="<?= HOME; ?>/_cdn/script.js"></script>
         <script src="<?= HOME; ?>/_cdn/mail.js"></script>
+        <script src="<?= HOME; ?>/_cdn/animation.js"></script>
 
     </body>
 </html>

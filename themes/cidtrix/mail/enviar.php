@@ -13,11 +13,12 @@ $Mailer->isHTML(true);
 
 // Configurações do SMTP
 $Mailer->SMTPAuth = true;
-$Mailer->SMTPSecure = 'tls';
-$Mailer->Host = 'smtp.gmail.com';
-$Mailer->Port = 587;
-$Mailer->Username = 'email';
-$Mailer->Password = 'senha';
+//$Mailer-> SMTPDebug = 3;
+$Mailer->SMTPSecure = 'ssl';
+$Mailer->Host = 'br554.hostgator.com.br';
+$Mailer->Port = 465;
+$Mailer->Username = 'contato@cidtrix.com.br';
+$Mailer->Password = '@rv0re24Xcv';
 
 // E-Mail do remetente (deve ser o mesmo de quem fez a autenticação
 // nesse caso seu_login@gmail.com)
@@ -46,7 +47,7 @@ $Mailer->AltBody .= ' MENSAGEM: ' . (utf8_decode($GetPost['msg']));
 
 
 // adiciona destinatário (pode ser chamado inúmeras vezes)
-$Mailer->AddAddress('fernando.wesleypf@gmail.com');
+$Mailer->AddAddress('contato@cidtrix.com.br');
 
 //adciona uma cópia
 //$Mailer->AddBcc($_POST['email']);

@@ -14,25 +14,25 @@
 <!--FIM MENU PRINCIPAL-->
 
 <!--SOLUÇÕES - 2º DOBRA-->
-<section class="container main_solucoes" id="solucoes">
+<section class="container main_solucoes" itemscope itemtype="https://schema.org/Service">
     <div class="row main_solucoes_header">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="solucoes">
             <h1 class="text-center main_solucoes_titulo">SOLUÇÕES</h1>
             <p class="tagline text-center main_solucoes_subtitulo">CONHEÇA MELHOR NOSSAS ESPECIALIDADES</p>
         </div>
     </div>
 
     <div class="row">
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 anime">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <img src="<?= INCLUDE_PATH; ?>/img/criacao-sites.png" alt="Criação de Web Sites" >
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h4>CRIAÇÃO DE SITES</h4>
+                    <h4 itemprop="name">CRIAÇÃO DE SITES</h4>
                     <hr>
-                    <p class="text-center">
+                    <p class="text-center" itemprop="description">
                         Tenha seu site institucional que funcione em todos os dispositivos da atualidade. Cada projeto que é realizado, possui uma grande base estratégica. Pois afinal, o seu site é o seu cartão de visita, e que necessita passar credibilidade, confiança e autoridade.
                     </p>
                 </div>
@@ -40,30 +40,30 @@
         </article>
 
 
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 anime">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <img src="<?= INCLUDE_PATH; ?>/img/seo.png" alt="Otimização de Sites - SEO" >
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h4>OTIMIZAÇÃO DE SITES - SEO</h4>
+                    <h4 itemprop="name">OTIMIZAÇÃO DE SITES - SEO</h4>
                     <hr>
-                    <p class="text-center">
+                    <p class="text-center" itemprop="description">
                         Nossa consultoria em SEO irá potencializar e melhorar seu posicionamento em sites de busca como o Google. Afinal, lembre-se: Quem não é visto, não é lembrado!
                     </p>
                 </div>
             </div>
         </article>
 
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 anime">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <img src="<?= INCLUDE_PATH; ?>/img/consultoria.png" alt="Consultoria em Vendas Online" >
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h4>CONSULTORIA EM VENDAS DIGITAIS</h4>
+                    <h4 itemprop="name">CONSULTORIA EM VENDAS DIGITAIS</h4>
                     <hr>
-                    <p class="text-center">
+                    <p class="text-center" itemprop="description">
                         Trabalhando em um dos mais novos mercados da área de tecnologia e consultoria, a Cidtrix conta com profissionais altamente qualificados em trazer melhores resultados para sua empresa.
                     </p>
                 </div>
@@ -97,50 +97,50 @@
     </p>
     <p class="text-center"><strong>Veja nossos diferenciais.</strong></p>
     <div class="row text-center main_sobre-item">
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 anime">
             <div class="">
-                <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.jpg" alt="Pontualidade" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/pontualidade.png" alt="Pontualidade" class="img-responsive">
                 <h3>PONTUALIDADE</h3>
                 <hr>
                 <!--Um dos pontos mais valiosos que dão credibilidade para a empresa é passar um prazo e ter a responsabilidade de cumprir com o mesmo.--> 
                 <p class="tagline">Aplicamos métodos e análises para o desenvolvimento do seu projeto de tal forma que o prazo determinado será o suficiente para entregá-lo 100% finalizado na data estipulada, além de você acompanhar cada etapa do seu desenvolvimento.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 anime">
             <div class="">
-                <img src="<?= INCLUDE_PATH; ?>/img/responsivo.jpg" alt="Responsivo" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/design-responsivo.png" alt="Responsivo" class="img-responsive">
                 <h3>PROJETOS RESPONSIVOS</h3>
                 <hr>
                 <p class="tagline">Todos os nossos projetos são desenvolvidos para que adaptem a qualquer dispositivo. Seus clientes poderão acessar o seu site de qualquer aparelho, seja ele um smartphone, tablet ou notebook, independentemente do tamanho de sua tela.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 anime">
             <div class="">
-                <img src="<?= INCLUDE_PATH; ?>/img/autoridade.jpg" alt="Autoridade" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/autoridade.png" alt="Autoridade" class="img-responsive">
                 <h3>AUTORIDADE</h3>
                 <hr>
                 <p class="tagline">Através da consultoria realizada pela Cidtrix, sua empresa possuirá um destaque maior no mercado, passando credibilidade e autoridade para os seus clientes. Deixe com a gente, somos especialistas nisso.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 anime">
             <div class="">
-                <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.jpg" alt="Monitoramento" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/monitoramento.png" alt="Monitoramento" class="img-responsive">
                 <h3>MONITORAMENTO</h3>
                 <hr>
                 <p class="tagline">Através de ferramentas como o Google Analytics incorporadas ao seu site, você poderá monitorar todo o tráfego em sua empresa na internet, como por exemplo, quem está acessando, por onde estão acessando e de onde estão acessando.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 anime">
             <div class="">
-                <img src="<?= INCLUDE_PATH; ?>/img/equipe-qualificada.jpg" alt="Equipe qualificada" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/equipe-qualificada.png" alt="Equipe qualificada" class="img-responsive">
                 <h3>EQUIPE QUALIFICADA</h3>
                 <hr>
                 <p class="tagline">Nossa equipe conta com profissionais altamente qualificados capaz de trazer resultados surpreendentes para sua empresa. Analisamos cada caso, estudamos o comportamento do mercado, temos sempre soluções inovadoras em mente.</p>
             </div>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeIn">
+        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 anime">
             <div class="">
-                <img src="<?= INCLUDE_PATH; ?>/img/resultados.jpg" alt="Resultados" class="img-responsive">
+                <img src="<?= INCLUDE_PATH; ?>/img/resultados.png" alt="Resultados" class="img-responsive">
                 <h3>MELHORES RESULTADOS</h3>
                 <hr>
                 <p class="tagline">Garantimos sempre os melhores resultados. Invista na sua empresa, utilize todo o potêncial oferecido pelo mundo digital. Tenha essa experiência conosco. Descubra-se com a gente!</p>
@@ -214,17 +214,17 @@
         </div>
     </div>
     <div class="row">
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow flipInY">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 anime">
             <img src="<?= INCLUDE_PATH; ?>/img/endereco.png" alt="Endereço" class="img-responsive">
             <h3><strong>Cidade</strong></h3>
             <p class=" tagline">Maringá - PR</p>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow flipInY">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 anime">
             <img src="<?= INCLUDE_PATH; ?>/img/telefone.png" alt="Telefone" class="img-responsive">
             <h3><strong>Telefone</strong></h3>
-            <p class="tagline">44 98852-7951</p>
+            <p class="tagline">(44) 99161-0151</p>
         </article>
-        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow flipInY">
+        <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 anime">
             <img src="<?= INCLUDE_PATH; ?>/img/email.png" alt="Email" class="img-responsive">
             <h3><strong>Envie-nos um Email</strong></h3>
             <p class="tagline">contato@cidtrix.com.br</p>
@@ -239,7 +239,7 @@
     <div class="row" align="center">
         <article class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-md-offset-1">
             <h3 class="invisible">Curta Nossa Página No Facebook</h3>
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com/Cidtrix-588071891402743" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/facebook.png" alt="Curta Nossa Página No Facebook">
                 <span class="text-left">Compartilhe</span>
             </a>
@@ -262,7 +262,7 @@
             <h3 class="invisible">Conecte-se no Google+</h3>
             <a href="https://plus.google.com" target="_blank">
                 <img src="<?= INCLUDE_PATH; ?>/img/g+.png" alt="Conecte-se no Google+">
-                <span class="text-left">Conecte-se</span>
+                <span class="text-left">Recomende</span>
             </a>
         </article>
     </div>
@@ -284,7 +284,7 @@
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-contato-meio">
                 <img src="<?= INCLUDE_PATH; ?>/img/fone-footer.png" alt="Telefone" class="img-responsive" width="40" height="40">
                 <h5>ATENDIMENTO AO CLIENTE</h5>
-                <p class="tagline">44 98852-7951</p>
+                <p class="tagline">(44) 99161-0151</p>
             </article>
             <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img src="<?= INCLUDE_PATH; ?>/img/email-footer.png" alt="Email" class="img-responsive" width="40" height="40">
